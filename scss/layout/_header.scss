@@ -1,0 +1,297 @@
+// Non-modular or client styles for .l-header region.
+
+// Non-modular or client styles for .l-header region.
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+
+
+@mixin alpha-attribute($attribute, $color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  #{$attribute}: $solid-color;
+  #{$attribute}: $color;
+}
+
+
+.logo img{
+    padding:10px;
+}
+
+
+.main_title
+{
+min-width:300px;
+  position: relative;
+/*
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+*/
+  float: left;
+  font-family: "Times New Roman",serif;
+  font-weight: normal;
+  font-size: 40px;
+  color: #ffffff;
+  letter-spacing: -0.06em;
+}
+.main_title
+{
+  /* padding-top: 6px; */
+  font-size: 40px;
+}
+.move
+{
+  margin-left: -2px;
+  font-family: "Times New Roman",serif;
+  font-weight: normal;
+  font-size: 40px;
+  color: #ffffff;
+  letter-spacing: -0.04em;
+}
+.move
+{
+  padding-top: 6px;
+  font-size: 40px;
+}
+
+
+.header {
+        background:url('../images/bg_1.jpg') no-repeat center top transparent;
+
+        background-size: 100% 100%;
+        
+        	@media(max-width: 760px){
+           	background-size: 100% 180px; 
+        	}
+                @media(max-width: 760px){
+           	background-size: 100% 320px; 
+        	}
+        
+	margin-bottom: 0px;
+
+
+
+		.row-banner {
+	@include alpha-attribute('background-color', rgba($greenAccent, 0.9), $greenAccent); 
+                	.inner-banner {
+			margin-top:-8px;
+			margin-bottom:-8px;
+			padding: 10px 0px 0px;
+			height: 60px;
+		
+			 text-shadow: 1px 1px 2px #000; 
+			/* Medium devices (desktops, 992px and up) */
+                        	@media (min-width: 992px) {
+				padding: 12px 0px 12px 0px;
+				height: 90px;
+		    		}
+                    	/* Large devices (desktops, 1200px and up) */
+		    		@media (min-width: 1200px) {
+				padding: 14px 0px 14px 0px;
+				height: 110px;
+		    		}
+
+                    		.vertical-align {
+		    		display: inline-table;
+		    		}
+                        }          
+        	}
+        
+
+
+
+        
+        
+     		.row-navbar {
+		/*@include alpha-attribute('background-color', rgba($newDarkGreen, 0.9), $newDarkGreen);
+		 background-color: $greySpanishMoss;
+		@include alpha-attribute('background-color', rgba($greySpanishMoss, 0.6), $greySpanishMoss); */
+		background:$greySpanishMoss;
+		}   
+        	.row-top-nav{
+padding-bottom: 1px;
+		/* @include alpha-attribute('background-color', rgba($greySpanishMoss, 0.9), $greySpanishMoss); */
+	 @include alpha-attribute('background-color', rgba($greySpanishMoss, 0.9), $greySpanishMoss);
+		/*	background:$greySpanishMoss; */
+		/*	background-color: $greenAccent;	*/
+
+		}
+
+	}
+
+
+
+
+ 
+.header-table {
+border: 0px solid red;
+min-width:450px;
+padding: 4px 15px;
+margin-top: 0px;
+margin-left:15%;
+}
+
+#header-mid-banner ul{
+vertical-align: middle;
+}
+
+#header-mid-banner li{
+border: 0px solid yellow;
+padding-right: 10px;
+display: inline-block;
+list-style-type: none;
+vertical-align: middle;
+}
+
+.cell-school { 
+border: 0px solid blue;
+display: inline-block;
+text-shadow: 1px 1px 2px #000;
+}
+
+.cell-dept { 
+border: 0px solid red;
+display: inline-block;
+text-shadow: 1px 1px 2px #000;
+}
+
+.cell-dept a{ 
+color: #fff !important;
+}
+
+.cell-shield {
+border: 0px solid red;
+display: inline-block;
+width: 42px;
+	@media (min-width: $screen-sm) {
+	width: 54px;
+	}
+/* Medium devices (desktops, 992px and up) */
+	@media (min-width: $screen-md) { 
+	width: 70px;
+	}
+	@media (min-width: $screen-lg) { 
+	width: 80px;
+	} 
+}
+
+h1 {
+margin: 0px;
+padding: 0px;
+font-size: 18px;
+line-height: 18px;
+/* text-shadow: 1px 1px 2px #000; */
+a {
+color: #fff;
+&:hover {
+text-decoration: none;
+color: #fff;
+} 
+} 
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm) {
+font-size: 20px;
+line-height: 20px;
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md) {
+font-size: 24px;
+line-height: 24px;
+}
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: $screen-lg) {
+font-size: 28px;
+line-height: 28px;
+}
+}
+
+h2 {
+margin: 0px;
+padding: 0px;
+font-size: 22px;
+line-height: 22px;
+/* text-shadow: 1px 1px 2px #000; */
+a {
+color: #fff;
+&:hover {
+text-decoration: none;
+color: #fff;
+} 
+} 
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm) {
+font-size: 24px;
+line-height: 24px;
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md) {
+font-size: 28px;
+line-height: 28px;
+}
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: $screen-lg) {
+font-size: 34px;
+line-height: 34px;
+}
+} 
+@media (min-width: $screen-sm) {
+height: 69px;
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md) { 
+height: 91px;
+}
+@media (min-width: $screen-lg) { 
+height: 109px;
+}
+
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+.tu-shield {
+background: url('../images/tu-shield-sprite.png') no-repeat 0px -241px transparent;
+padding: 0px 0;
+height: 45px;
+width:32px; 
+overflow: hidden;
+float: left;
+//@include transition(height 0.5s 0.8s ease, width 0.5s 0.8s ease);
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm) {
+background-position: 0px -178px;
+height: 61px;
+width:44px;
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md) { 
+background-position: 0px -97px;
+height: 81px;
+width:60px;
+}
+@media (min-width: $screen-lg) { 
+background-position: 0px 0px;
+padding: 0px 0;
+height:97px;
+width:70px;
+}
+}
+
+.white a{
+color: #ffffff !important;
+}
+
+.main_menu_wrapper{
+margin-left: 20%;
+border:0px solid red;
+}
+
+#main-menu{
+
+padding-top:10px;
+@include alpha-attribute('background-color', rgba($greySpanishMoss, 0.9), $greySpanishMoss);
+height: 36px;
+}

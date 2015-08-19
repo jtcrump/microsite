@@ -1,0 +1,41 @@
+
+
+/* MISC */
+div.announce {
+  /*background: #ebf4e1 url("../images/announce_arrow.png") top left no-repeat;*/
+  background: #ffff43 url("../images/announce_arrow_2.png") top left no-repeat; /* changed announce box to yellow per webcomm request to make it more noticeable */
+  height: 36px;
+  overflow: hidden;
+  margin: -10px -10px 10px -10px; /* added bottom margin of 10 here so single random image does not overlap the bottom of the announcement in IE7 */
+  padding: 10px 10px 10px 40px;
+  padding-top: 10px;
+}
+
+div.announce2 {
+  /* for non-emergencies */
+  background: #99cc66 url("../images/announce_arrow_3_1.png") top left no-repeat; /* changed announce box to yellow per webcomm request to make it more noticeable */
+  height: 36px;
+  overflow: hidden;
+  margin: -10px -10px 10px -10px; /* added bottom margin of 10 here so single random image does not overlap the bottom of the announcement in IE7 */
+  padding: 10px 10px 10px 40px;
+  padding-top: 10px;
+}
+
+div.announce2 a, div.announce2 a:visited {
+    text-decoration: none;
+    color: #FFF;
+}
+
+div.announce p, div.announce2 p {
+  font-size: 11px;
+  line-height: 12px;
+  margin-top: .5em;
+}
+
+div.announce h2, div.announce2 h2 {
+  font-size: 14px;
+  line-height: 14px;
+  padding: 0;
+  margin: 0;
+  color: #996600;
+}

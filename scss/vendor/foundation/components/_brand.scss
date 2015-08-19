@@ -1,0 +1,169 @@
+
+
+
+// Shorthand mixin. Supports multiple parentheses-deliminated values for each variable.
+// Example: @include transition (all 2s ease-in-out);
+//          @include transition (opacity 1s ease-in 2s, width 2s ease-out);
+//          @include transition-property (transform, opacity);
+
+@mixin transition($properties...) {
+  // Fix for vendor-prefix transform property
+  $needs-prefixes: false;
+  $webkit: ();
+  $moz: ();
+  $spec: ();
+
+  // Create lists for vendor-prefixed transform
+  @each $list in $properties {
+    @if nth($list, 1) == "transform" {
+      $needs-prefixes: true;
+      $list1: -webkit-transform;
+      $list2: -moz-transform;
+      $list3: ();
+
+      @each $var in $list {
+        $list3: join($list3, $var);
+
+        @if $var != "transform" {
+          $list1: join($list1, $var);
+          $list2: join($list2, $var);
+        }
+      }
+
+      $webkit: append($webkit, $list1);
+      $moz:    append($moz,    $list2);
+      $spec:   append($spec,   $list3);
+    } @else {
+      $webkit: append($webkit, $list, comma);
+      $moz:    append($moz,    $list, comma);
+      $spec:   append($spec,   $list, comma);
+    }
+  }
+
+  @if $needs-prefixes {
+    -webkit-transition: $webkit;
+       -moz-transition: $moz;
+            transition: $spec;
+  } @else {
+
+  }
+}
+
+@mixin transition-property($properties...) {
+  -webkit-transition-property: transition-property-names($properties, "webkit");
+     -moz-transition-property: transition-property-names($properties, "moz");
+          transition-property: transition-property-names($properties, false);
+}
+
+@mixin transition-duration($times...) {
+  @include prefixer(transition-duration, $times, webkit moz spec);
+}
+
+@mixin transition-timing-function($motions...) {
+  // ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier()
+  @include prefixer(transition-timing-function, $motions, webkit moz spec);
+}
+
+@mixin transition-delay($times...) {
+  @include prefixer(transition-delay, $times, webkit moz spec);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+.brand {
+border:1px solid black;
+  background: url('/sites/all/themes/tulane/images/tu-shield-sprite.png') no-repeat 0px -213px transparent;
+  padding: 0px 0;
+  height: 45px;
+  width:32px;
+
+
+  @include transition(height 0.5s 0.8s ease, background-position 0.5s 0.8s ease); 
+
+    > a {
+      margin-left: 60px;
+      line-height: 45px;
+      font-weight: 400;
+      font-size: 18px;
+    }
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+      background-position: 0px -122px;
+      padding: 0px 0;
+      height: 81px;
+      width:200px;
+      > a {
+        margin-left: 200px;
+        line-height: 80px;
+        font-weight: 400;
+        font-size: 22px;
+        height:81px;
+      }
+    }
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) { 
+    /* brand */
+
+      background-position: 0px 0px;
+      padding: 0px 0;
+      height: 80px;
+      height: 109px;
+      width:260px;
+      color:#00331A;
+      > a {
+        margin-left: 270px;
+        line-height: 110px;
+        font-weight: 400;
+        font-size: 26px;
+        height:109px;
+      }
+    }
+}
+
+.brand-icon-sm {
+  display: inline-block;
+  position: relative;
+border:1px solid blue;
+  background: url('/sites/all/themes/tulane/images/tu-shield-sprite.png') no-repeat 0px -278px transparent;      
+  width: 22px;
+  padding: 0px 0;
+  height: 28px;
+  overflow: hidden;
+
+}
+
+.brand-icon-md {
+border:1px solid red;
+  background: url('/sites/all/themes/tulane/images/tu-shield-sprite.png') no-repeat 0px -213px transparent;
+  padding: 4px;
+  height: 45px;
+  width:34px;
+  padding:0px 0;
+  margin:0px 0;
+}
+.brand-wrap {
+  padding: 10px
+}
+
+
+
+

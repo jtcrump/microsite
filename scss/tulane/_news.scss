@@ -1,0 +1,173 @@
+
+div.article_actions {
+ /* width: 20%; don't need a width var for article actions, this width stops us from having three actions on new wave - budd 10/19/2007*/
+  float: right;
+  /*margin: 15px;  don't need a margin except on the right to spread out the action links a little - budd 10/19/2007*/
+  margin-right: 10px;
+}
+
+div.article_actions_over_cw {
+	/* negative margin to float article_action items above any existing content well, works best when tehre is a page title*/
+  float: right;
+  margin-top:-23px;
+  margin-right: 10px;
+}
+
+div.article_actions_over_cw_up {
+	/* negative margin to float article_action items above any existing content well, works best when tehre is a page title*/
+  float: right;
+  margin-top:-35px;
+  margin-right: 10px;
+}
+
+div.article_actions_summary_page {
+/* added to float the subscribe action on news sumamry page - budd 10-23-1007 */
+	/*float: right;
+	margin-right: 350px;
+	margin-top: -40px;*/
+	float: left;
+	margin-left: 250px;
+	margin-top: -33px;
+}
+
+div.news_cat_left{
+	float: left;
+	}
+	
+div.news_source {
+  margin: 10px 0 10px 0;
+}
+
+table.photo_single_column td,
+table.photo_single_column img {
+    padding: 5px;
+}
+
+.rte_image_float_left {
+	float: left;
+	margin-right: 10px;
+}
+
+.rte_image_float_right {
+	float: right;
+	margin-left: 10px;
+}
+
+.float_left {
+	float: left;
+	margin-right: 10px;
+}
+
+.float_right {
+	float: right;
+	margin-left: 10px;
+}
+
+.inset_wide_news_photo {
+	float: right; 
+	width: 330px; 
+	margin: 5px 10px 0 10px; 
+	padding: 0px; 
+	border:none;
+}
+
+.inset_narrow_news_photo {
+	float: right; 
+	width: 220px; 
+	margin: 5px 10px 0 10px;
+	padding: 0px; 
+	border: none;
+}
+
+.inset_extra_wide_photo {
+	float: right; 
+	width: 440px; 
+	margin: 5px 10px 0 10px;
+	padding: 0px; 
+	border:none;
+}
+
+.inset_photo {
+	float: right; 
+	margin: 5px 10px 0 10px; 
+	padding: 0px; 
+	border: none;
+}
+
+.inset_mini_photo {
+	float: right; 
+	width: 110px; 
+	margin: 5px 10px 0 10px; 
+	padding: 0px; 
+	border: none;
+}
+
+.inset_photo_caption {
+	border-right: thin; 
+	border-top: thin;
+	border-bottom: thin;
+	border-left: thin;
+	padding: 2px;
+	background-color: #CCE4D9;
+}
+
+.home_page_gallery_caption {
+	width:558px;
+	margin-top:1px;
+	background-color: #CCE4D9;
+	padding:1px;
+}
+
+.home_page_gallery_caption p {
+	margin:0 0 1px 3px;
+}
+
+.inset_text_box {
+	border-right: medium none; 
+	border-top: medium none;
+	border-left: medium none; 
+	border-bottom: medium none; 
+	padding: 10px;
+	margin: 10px;
+	float: right; 
+	background-color: #CCE4D9;
+}
+
+.media_link_inset  {
+	border-right: medium none; 
+	border-top: medium none;
+	border-left: medium none; 
+	border-bottom: medium none; 
+	padding: 10px;
+	margin: 10px;
+	float: right; 
+}
+ 
+.small_indent {
+	margin-left: 10px;
+}
+
+.indent { 
+	margin-left: 20px;
+}
+
+.indent_text_box {
+	border-right: medium none; 
+	border-top: medium none;
+	border-left: medium none; 
+	border-bottom: medium none; 
+	padding: 10px;
+	margin-left: 20px;
+	background-color: #CCE4D9;
+}
+
+div.feedburnerFeedBlock div#creditfooter {
+	display:none; 
+}
+
+.top-spacer {
+	margin-top:1em;
+}
+.vertical-spacer {
+	margin:1em 0 1em 0;	
+}

@@ -1,0 +1,157 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 10, 2015, 12:13:03 PM
+    Author     : James Crump
+*/
+
+$primary-color: #12420c;
+$primary-alt: tint( $primary-color, 25% );
+$secondary-color: #666666;
+$dark-bg: #ffffff;
+
+
+    .above-header{
+        height:90px;
+    }
+
+
+.top-bar.expanded {
+	background:$primary-alt;
+
+	.title-area {
+		background: $primary-alt;
+	}
+}
+
+
+.top-bar {
+	background:$primary-color;
+	height:$topbar-height;
+	line-height:$topbar-height;
+	padding-left:rem-calc(15px);
+	
+	section li:not(.has-form) a:not(.button) {
+		line-height:$topbar-height;
+		background:$primary-color;
+
+		&:hover {
+			background:$primary-alt;
+		}
+	}
+	.logo, .name {
+		display: table-cell;
+ 		text-align: center;
+  		vertical-align:middle;
+  		line-height:$topbar-height;
+	}
+ 
+	.name h1 a {
+            display:none; 
+		font-size:1.2em;
+		line-height: $topbar-height;
+		padding: 0 5px;
+		font-weight:normal;
+		letter-spacing: 1px;
+	}
+
+	.toggle-topbar.menu-icon a {
+		height:$topbar-height;
+		line-height: $topbar-height;
+	}
+
+    ul li>a {
+    	padding-top:0;
+    	padding-bottom:0;
+    }
+
+
+}
+
+
+
+#top-menu{
+  margin-left:17%;  
+margin-top:5px;
+}
+
+
+.topbar {
+    padding-top:4px;
+	font-size: $small;
+	@media print {
+		display: none;
+	}	
+	text-shadow: 1px 1px 2px #000;
+	.nav {
+		> li > a {
+    -webkit-transition: .15s all;   
+    -webkit-transition-delay: .15s; 
+    -moz-transition: .15s all;   
+    -moz-transition-delay: .15s; 
+    -ms-transition: .15s all;   
+    -ms-transition-delay: .15s; 
+    -o-transition: .15s all;   
+    -o-transition-delay: .15s; 
+    transition: .15s all;   
+    transition-delay: .15s;
+			&:hover,
+			&:focus {
+    -webkit-transition-delay: .10s;
+    -moz-transition-delay: .10s;
+    -ms-transition-delay: .10s;
+    -o-transition-delay: .10s;
+    -transition-delay: .10s;
+			}
+		}
+	}
+        
+        	.nav-pills li{
+                    display:inline;
+                    padding-left:10px;
+                }
+	.nav-pills {
+		> li > a {
+                    font-size:14px;
+               
+				&,
+				&:hover,
+				&:focus {
+					color: #fff;
+
+			}
+		}
+	}
+}
+
+
+
+
+@media(max-width: 575px){
+    .topbar .nav-pills li
+    {
+    display: block; 
+    padding-left: 10px;
+    }
+    
+    .topbar {
+    height: 100px !important;
+    }
+}
+
+@media(max-width: 440px){
+    .topbar {
+    height: 140px !important;
+    }
+    
+    .search-container {
+        form {
+        float:left !important;
+        margin-top:33px !important;
+        margin-left:14px;
+        }
+    }
+}

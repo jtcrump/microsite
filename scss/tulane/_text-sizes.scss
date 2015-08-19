@@ -1,0 +1,420 @@
+/* CSS RESET */
+html, body, div, span,
+applet, object, iframe, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dd, dl, dt, li, ol, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	line-height: 1;
+	font-family: inherit;
+	text-align: left;
+	vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6, p, .font-normal, .font-normal-strong, .font-h1 , .font-h2 , .font-h3 , .font-h4 , .font-h5 , .font-h6  {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	line-height: 1;
+	font-family: inherit;
+	/*text-align: inherit;*/
+	vertical-align: baseline;
+}
+
+sup {
+	vertical-align: super; 
+	font-size: smaller
+}
+
+sub {
+	vertical-align: sub; 
+	font-size: smaller;
+}
+
+em {
+	font-style: italic;
+}
+
+.font-strong {
+	font-weight:700; 
+}
+
+blockquote {
+	margin-left: 40px;
+}
+
+blockquote, q {
+	quotes: "" "";
+}
+
+q:before, q:after,
+blockquote:before, blockquote:after {
+	content: "";
+}
+
+/* TEXT */
+/* RLW - moved to body.css to be included in the template-basepage.head
+body {
+  font-size: 10px;
+  line-height: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #001f10;
+  text-align: center;
+}
+*/
+body {
+  font-size: $normal;
+  line-height: $normal;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #001f10;
+}
+p, li {
+  font-size: $normal;
+  line-height: $normal;
+}
+
+p {
+  margin-top: .3em;
+  margin-bottom: .3em;
+}
+
+p.compact {
+  margin: 0 !important;
+  line-height: 1.2em;
+}
+
+p.small {
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+span.small {
+  font-size: .9em;
+  line-height: 1.1em;
+}
+
+/* HEADERS */
+
+h1, .font-h1 {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: Georgia, Times, serif;
+  color: #006633;
+}
+
+/* removed in favor of the style currently set for h2 
+h1.section_header {
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 2em;
+}*/
+
+h2, .font-h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: Georgia, Times, serif;
+  color: #006633;
+}
+
+h2.col_header, h1.section_header {
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-left: .25em;
+}
+
+h2.newwavetitle {
+	padding-top:25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    /*margin-left: .25em;*/
+	font-family: Arial, Helvetica, sans-serif;
+	color:#00331A;
+	font-size:2em;
+}
+
+h2.atoz_letter {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #006633;
+}
+
+
+h3, .font-h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+  font-family: Georgia, Times, serif;
+  color: #006633;  
+}
+
+h4, .font-h4 {
+  font-weight: bold;
+  font-family: Georgia, Times, serif;
+  color: #006633;
+}
+
+h5, .font-h5 {
+  font-size: 0.83em;
+  font-weight: bold;
+  font-family: Georgia, Times, serif;
+  color: #006633;
+}
+
+h6, .font-h6 {
+  font-size: 0.67em;
+  font-weight: bold;
+  font-family: Georgia, Times, serif;
+  color: #006633;
+}
+
+
+
+/* LINKS */
+
+a img, :link img, :visited img {
+	border: 0;
+}
+
+a {
+  font-size: $normal;
+  line-height: $normal;
+    text-decoration: none;
+    color: #336699;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #224568;
+}
+
+a:active {
+    text-decoration: underline;
+    color: #00331A;
+}
+
+a:visited {
+    color: #224568;
+}
+
+/* LISTS */
+
+ul,ol {
+  margin: 1em 0 1em 0;
+  padding-left: 3em;
+}
+
+ul {
+  list-style: square;
+}
+
+ul li ul, ol li ul {
+  font-size: 10px;
+  margin: 0px;
+}
+
+div#dept_name {
+  float: left;
+  clear: both;
+  width: 840px;
+  background: #204162;
+  padding: 0;
+  margin: 0;
+}
+
+div#dept_name h1 {
+  color: #FFF;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  text-transform:uppercase;
+}
+
+div#dept_name h1 a {
+  color: #FFF;
+  line-height: 28px;
+  text-align: center;
+  text-decoration: none;
+}
+
+div#dept_name h1 a:hover {
+  text-decoration: underline;
+}
+
+
+hr {
+   color: #006633;
+  background-color: #006633;
+  height: 1px;
+}
+
+
+
+
+.font-normal {
+	font-size: $normal;
+}
+
+.font-normal-strong {
+	font-size: $normal;
+	font-weight:bold;
+}
+
+.font-xxsmall {
+	font-size:xx-small;
+}
+
+.font-xsmall {
+	font-size:x-small;
+}
+
+.font-small {
+	font-size:small;
+}
+
+.font-medium {
+	font-size:medium;
+}
+
+.font-large {
+	font-size:large;
+}
+
+.font-xlarge {
+	font-size:x-large;
+}
+
+.font-xxlarge {
+	font-size:xx-large;
+}
+
+.text-xsmall {
+	/* the current normal */
+	font-size:.75em;
+}
+
+.text-small {
+	/* the current xxsmall */
+	font-size:xx-small;
+}
+
+/*.text-normal {
+	/* the current paragraph 
+	font-size:1.2em;
+	line-height:1.3em;	
+}*/
+
+.text-large {
+	/* the current small */
+	/* font-size:small; */
+	font-size:1.2em;	
+}
+
+.text-xlarge {
+	/* the current medium */
+	font-size:medium;	
+}
+
+.text-xxlarge {
+	/* the current large */
+	font-size:large;	
+}
+
+.text-headline {
+	/* the current xlarge */
+	font-size:x-large
+}
+
+.white-text,
+.white-text a,
+.white-text a:visited,
+.white-text a:link,
+.white-text a:focus,
+.white-text a:hover,
+.white-text a:active 
+{
+	color:#ffffff;
+}
+
+.warning-message {
+	color: #FF0000; 
+	margin:20px 0 0 20px; 
+	font-size:1.5em;	
+}
+
+
+#month_year_filter label {
+	width: 5em;
+	text-align: right;
+	margin-right: 0.5em;
+	margin: 0 1em 0 2em;
+}
+
+#month_year_filter .submit {
+	margin: 0 1em 0 2em;
+}
+
+div.media_advisory h2 {
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#000000;
+	text-transform:uppercase;
+	font-size:x-large;
+	margin-bottom:15px;
+}	
+
+div.media_advisory h3 {
+	display:inline;
+	margin:10px 0px 0px 10px;
+	width:44px;
+	color:#000000;
+	float:left;
+	clear:left;
+}
+
+div.media_advisory p {
+	display:inline;
+	float:left;
+	margin-left:65px;
+	clear:right;
+}
+
+
+/*
+div#ndp_title_block {
+	
+}
+*/
+
+div#ndp_body_block {
+	margin:2em 0 2em 0;
+}
+
+span#ADF-Reset-Message b {
+	color:#000000;	
+	font-weight: bold;
+	font-size:1.2em;
+}
+
+.more-link{
+width:100%;
+border: 0px solid red;
+height: 20px;
+}
+
+.more-link a{
+float: left;
+}
+
