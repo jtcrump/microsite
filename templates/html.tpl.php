@@ -27,7 +27,7 @@ $path = "/" . drupal_get_path('theme', variable_get('theme_default', NULL));
 
 if(@$variables['classes_array'][7] == 'node-type-microsite'){
 
-print "<link rel='stylesheet' href='../style/microsite.css' type='text/css'>";
+print "<link rel='stylesheet' href='" . $path . "/style/microsite.css' type='text/css'>";
 print "<script type='text/javascript' src='" . $path . "/js/jquery.js?ver=1.11.2'></script>";
 print "<script type='text/javascript' src='" . $path . "/js/jquery-migrate.min.js?ver=1.2.1'></script>";
 print "<script type='text/javascript' src='" . $path . "/js/global.js?ver=1.0.0'></script>";
