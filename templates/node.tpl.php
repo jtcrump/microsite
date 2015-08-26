@@ -1,6 +1,6 @@
 <?php
 $theme_name = "TulaneMicrosite";
-$path = "/sites/tulane_01/rdw411/templates";
+$path = "/" . drupal_get_path('theme', variable_get('theme_default', NULL));
 /**
  * @file
  * Default theme implementation to display a node.
