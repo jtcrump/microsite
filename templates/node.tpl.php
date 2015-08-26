@@ -1,6 +1,6 @@
 <?php
 $theme_name = "TulaneMicrosite";
-
+$path = "/sites/tulane_01/rdw411/templates";
 /**
  * @file
  * Default theme implementation to display a node.
@@ -126,7 +126,7 @@ if($node->type == 'microsite'){
 <style type="text/css">
 /* image in the main menu on far left */
 .nav-primary .small-site-title {
-	background-image: url(/sites/all/themes/<?php print $theme_name; ?>/images/menu-image.png);
+	background-image: url(<?php echo $path; ?>/images/menu-image.png);
 }
 
 /* splash page small image that's a link */

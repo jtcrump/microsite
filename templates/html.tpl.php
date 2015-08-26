@@ -3,7 +3,13 @@
 <head>
 <meta charset="UTF-8" />
   <title><?php print $head_title; ?></title>
-<?php $theme_name = "TulaneMicrosite"; ?>
+<?php 
+$theme_name = "TulaneMicrosite"; 
+$path = "/sites/tulane_01/rdw411/templates";
+?>
+
+
+
   <?php print $styles; ?>
   <?php print $scripts; ?>
 <meta name="description" content="<?php print $head_title; ?>" />
@@ -18,23 +24,24 @@
 
 
 
-if($variables['classes_array'][7] == 'node-type-microsite'){
-print "<link rel='stylesheet' href='/sites/all/themes/" . $theme_name . "/style/microsite.css' type='text/css'>";
-print "<script type='text/javascript' src='/sites/all/themes/" . $theme_name . "/js/jquery.js?ver=1.11.2'></script>";
-print "<script type='text/javascript' src='/sites/all/themes/" . $theme_name . "/js/jquery-migrate.min.js?ver=1.2.1'></script>";
-print "<script type='text/javascript' src='/sites/all/themes/" . $theme_name . "/js/global.js?ver=1.0.0'></script>";
-print "<script type='text/javascript' src='/sites/all/themes/" . $theme_name . "/js/home.js?ver=1.0.0'></script>";
-print "<script type='text/javascript' src='/sites/all/themes/" . $theme_name . "/js/jquery.scrollTo.min.js'></script>";
-print "<script type='text/javascript' src='/sites/all/themes/" . $theme_name . "/js/jquery.localScroll.min.js'></script>";
+
+if(@$variables['classes_array'][7] == 'node-type-microsite'){
+print "<link rel='stylesheet' href='" . $path . "/style/microsite.css' type='text/css'>";
+print "<script type='text/javascript' src='" . $path . "/js/jquery.js?ver=1.11.2'></script>";
+print "<script type='text/javascript' src='" . $path . "/js/jquery-migrate.min.js?ver=1.2.1'></script>";
+print "<script type='text/javascript' src='" . $path . "/js/global.js?ver=1.0.0'></script>";
+print "<script type='text/javascript' src='" . $path . "/js/home.js?ver=1.0.0'></script>";
+print "<script type='text/javascript' src='" . $path . "/js/jquery.scrollTo.min.js'></script>";
+print "<script type='text/javascript' src='" . $path . "/js/jquery.localScroll.min.js'></script>";
 } else {
-print "<link rel='stylesheet' href='/sites/all/themes/" . $theme_name . "/css/tulane.css' type='text/css'>";
-print "<link rel='stylesheet' href='/sites/all/themes/" . $theme_name . "/css/foundation.min.css' type='text/css'>";
-print "<script type='text/javascript' src='/sites/all/themes/" . $theme_name . "/js/vendor/modernizr.js'></script>";
-print "<script type='text/javascript' src='/sites/all/themes/" . $theme_name . "/js/foundation.min.js'></script>";
+print "<link rel='stylesheet' href='" . $path . "/css/tulane.css' type='text/css'>";
+print "<link rel='stylesheet' href='" . $path . "/css/foundation.min.css' type='text/css'>";
+print "<script type='text/javascript' src='" . $path . "/js/vendor/modernizr.js'></script>";
+print "<script type='text/javascript' src='" . $path . "/js/foundation.min.js'></script>";
 }
 ?>
-<link rel="Shortcut Icon" href="/sites/all/themes/<?php print $theme_name; ?>/images/favicon.ico" type="image/x-icon" />
-<link rel='stylesheet' id='dashicons-css'  href='/sites/all/themes/<?php print $theme_name; ?>/style/dashicons.min.css?ver=4.2.3' type='text/css' media='all' />
+<link rel="Shortcut Icon" href="" . $path . "/images/favicon.ico" type="image/x-icon" />
+<link rel='stylesheet' id='dashicons-css'  href='" . $path . "/style/dashicons.min.css?ver=4.2.3' type='text/css' media='all' />
 <link rel='stylesheet' id='google-font-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600&#038;ver=1.0.1' type='text/css' media='all' />
 <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
