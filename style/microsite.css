@@ -2253,9 +2253,10 @@ li.comment.depth-1 {
 
 /* section 1 */  
 #front-page-1 {
-	background-color: #535353;
-	background-size: cover;
-	background-repeat: no-repeat;
+background-color: #63c8ea ;
+ background-repeat: repeat;
+   position: relative;
+    overflow: hidden;
 }
 
 #front-page-1 p, 
@@ -2282,35 +2283,91 @@ li.comment.depth-1 {
 
 }
 
+
 .invite-block p {
 	font-size: 14px;
 	letter-spacing: 2px;
 }
 
+.invite{
+font-family: "Times New Roman", Georgia, Serif;
+}
+
+#shield{
+width: 25%;
+height: auto;
+}
+
+.fancy{
+font-family: freebsc !important;
+	font-size: 16px;
+margin-left: 8px;
+margin-right: 8px;
+}
+.invite-block .fitts{
+font-family: trajan !important;
+font-size: 26px !important;
+margin-top: 100px !important;
+padding-bottom: 100px !important;
+}
+
+.invite-block p{
+line-height: 50%;
+padding-left:100px;
+padding-right:100px;
+}
+
 .invite-block .name { 
-	font-size: 18px;
-	margin-top: 10px;
+font-family: trajan !important;
+	font-size: 16px;
 }
 
 .invite-box {
-	border: 2px solid #fff;
+margin-top:10px;
+ border-radius: 25px;
+	border: 2px solid #505050;
 	padding: 40px;
-	background-color: #535353;
+	background-color: #fff;
 }
 
+.slogan{
+letter-spacing: 5px;
+margin-top: 30px;
+margin-bottom: -30px;
+font-weight: 500;
+font-size: 36px !important;
+font-family: trajan !important;
+	font-size: 16px;
+color: #808080;
+line-height: 92%;
+
+}
+.slogan2{
+letter-spacing: 5px;
+margin-top: 30px;
+margin-bottom: -30px;
+font-weight: 500;
+font-size: 30px !important;
+font-family: trajan !important;
+	font-size: 16px;
+color: #808080;
+line-height: 92%;
+
+}
 .invite-box p {
 	font-size: 14px;
 	font-weight: 300;
+	color: #000 !important;
 }
 
 .invite-box h2 {
 	font-size: 24px;
-	color: #fff;
 	font-family: 'CharisSILW' serif;
 	font-weight: 200;
 	letter-spacing: 2px;
 	margin-bottom: 0;
 }
+
 
 .divider {
 	height: 8px;
