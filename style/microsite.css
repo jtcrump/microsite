@@ -2330,7 +2330,7 @@ margin-top:10px;
 	border: 2px solid #505050;
 	padding: 40px;
 	background-color: #fff;
-max-width: 675px;
+max-width: 675px !important;
 }
 
 .slogan{
@@ -2343,7 +2343,7 @@ font-family: trajan !important;
 	font-size: 16px;
 color: #808080;
 line-height: 92%;
-max-width: 675px;
+max-width: 675px !important;
 }
 .slogan2{
 letter-spacing: 5px;
