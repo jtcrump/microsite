@@ -208,7 +208,7 @@ while($i2 <= $i){
 print "<section id=\"text-2\" class=\"widget widget_text\">";
 print "<div class=\"widget-wrap\">";		
 print "<div class=\"textwidget\">";
-print @$node->field_page_2_content['und'][$i2]['value'];
+print @$node->field_page_2_content['und'][$i2]['#markup'];
 print "</div></div>";
 print "</section>";
 $i2++;
