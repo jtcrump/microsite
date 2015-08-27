@@ -8,8 +8,6 @@ $theme_name = "TulaneMicrosite";
 $path = "/" . drupal_get_path('theme', variable_get('theme_default', NULL));
 ?>
 
-
-
   <?php print $styles; ?>
   <?php print $scripts; ?>
 <meta name="description" content="<?php print $head_title; ?>" />
@@ -26,7 +24,59 @@ $path = "/" . drupal_get_path('theme', variable_get('theme_default', NULL));
 
 
 if(@$variables['classes_array'][7] == 'node-type-microsite'){
+?>
 
+<style>
+/* ## Typographical Elements
+--------------------------------------------- */
+@font-face {
+  font-family: FreeBSC;
+  src: url(<?php print $path; ?>/fonts/freebsc/FREEBSC.ttf);
+}
+@font-face {
+  font-family: Trajan;
+  src: url(<?php print $path; ?>/fonts/trajan/TrajanPro-Regular.otf);
+}
+@font-face {
+  font-family: CharisSILW;
+  src: url(<?php print $path; ?>/fonts/CharisSIL/CharisSIL-R.eot);
+  src: url(<?php print $path; ?>/fonts/CharisSIL/CharisSIL-R.eot?#iefix) format(embedded-opentype), 
+url(<?php print $path; ?>/fonts/CharisSIL/CharisSIL-R.woff) format(woff), 
+url(<?php print $path; ?>/fonts/CharisSIL/CharisSIL-R.ttf) format(truetype), 
+url(<?php print $path; ?>/fonts/CharisSIL/CharisSIL-R.svg#charis_silregular) format(svg); }
+
+@font-face {
+  font-family: CharisSILW;
+  src: url(<?php print $path; ?>/fonts/CharisSIL/CharisSIL-I.eot);
+  src: url(<?php print $path; ?>/fonts/CharisSIL/CharisSIL-I.eot?#iefix) format(embedded-opentype), 
+url(<?php print $path; ?>/fonts/CharisSIL/CharisSIL-I.woff) format(woff), 
+url(<?php print $path; ?>/fonts/CharisSIL/CharisSIL-I.ttf) format(truetype), 
+url(<?php print $path; ?>/fonts/CharisSIL/CharisSIL-I.svg#charis_silitalic) format(svg);
+  font-style: italic; }
+
+@font-face {
+  font-family: CharisSILW;
+  src: url(<?php print $path; ?>/fonts/CharisSIL/CharisSIL-B.eot);
+  src: url(<?php print $path; ?>/fonts/CharisSIL/CharisSIL-B.eot?#iefix) format(embedded-opentype), 
+url(<?php print $path; ?>/fonts/CharisSIL/CharisSIL-B.woff) format(woff), 
+url(<?php print $path; ?>/fonts/CharisSIL/CharisSIL-B.ttf) format(truetype), 
+url(<?php print $path; ?>/fonts/CharisSIL/CharisSIL-B.svg#charis_silbold) format(svg);
+  font-weight: bold; }
+
+@font-face {
+  font-family: CharisSILW;
+  src: url(<?php print $path; ?>/fonts/CharisSIL/CharisSIL-BI.eot);
+  src: url(<?php print $path; ?>/fonts/CharisSIL/CharisSIL-BI.eot?#iefix) format(embedded-opentype), 
+url(<?php print $path; ?>/fonts/CharisSIL/CharisSIL-BI.woff) format(woff), 
+url(<?php print $path; ?>/fonts/CharisSIL/CharisSIL-BI.ttf) format(truetype), 
+url(<?php print $path; ?>/fonts/CharisSIL/CharisSIL-BI.svg#charis_silbold_italic) format(svg);
+  font-weight: bold;
+  font-style: italic; 
+}
+</style>
+
+
+<?php
 print "<link rel='stylesheet' href='" . $path . "/style/microsite.css' type='text/css'>";
 print "<script type='text/javascript' src='" . $path . "/js/jquery.js?ver=1.11.2'></script>";
 print "<script type='text/javascript' src='" . $path . "/js/jquery-migrate.min.js?ver=1.2.1'></script>";
