@@ -239,7 +239,7 @@ $i++;
 <div class="wrap">
 <?php
 $i2 = 0;
-while($i2 <= $i){
+while($i2 < $i){
 print "<section id=\"text-" . $i2 . "\" class=\"widget widget_text\">";
 print "<div class=\"widget-wrap\">";		
 print @$node->field_page_3_content['und'][$i2]['value'];
@@ -269,7 +269,7 @@ $i++;
 <div class="wrap">
 <?php
 $i3 = 0;
-while($i3 <= $i){
+while($i3 < $i){
 print "<section id=\"text-" . $i2 . "\" class=\"widget widget_text\">";		
 print "<div class=\"textwidget\">";
 print @$node->field_page_4_content['und'][$i3]['value'];
@@ -300,7 +300,7 @@ $i++;
 <div class="wrap">
 <?php
 $i4 = 0;
-while($i4 <= $i){
+while($i4 < $i){
 print "<section id=\"text-" . $i2 . "\" class=\"widget widget_text\">";
 print "<div class=\"widget-wrap\">";		
 print @$node->field_page_5_content['und'][$i4]['value'];
