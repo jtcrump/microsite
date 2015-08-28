@@ -150,7 +150,9 @@ body {
 	margin: 0;
 }
 
-
+.textwidget p{
+font-size:18px;
+}
 
 .recentcomments a{
 display:inline !important;
