@@ -73,9 +73,7 @@ url(<?php print $path; ?>/fonts/CharisSIL/CharisSIL-BI.svg#charis_silbold_italic
   font-weight: bold;
   font-style: italic;
 }
-#front-page-1 {
-background-image: url(<?php print $path; ?>/images/<?php print $bg2; ?>);
-}
+
 </style>
 
 
