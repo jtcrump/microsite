@@ -271,7 +271,7 @@ $i++;
 $i3 = 0;
 while($i3 < $i){
 print "<section id=\"text-" . $i2 . "\" class=\"widget widget_text\">";		
-print "<div class=\"textwidget\">";
+print "<div class=\"widget-wrap\">";
 print @$content['field_page_4_content'][$i3]['#markup'];
 print "</div>";
 print "</section>";
