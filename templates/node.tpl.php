@@ -240,7 +240,7 @@ $i++;
 <?php
 $i2 = 0;
 while($i2 <= $i){
-print "<section id=\"text-2\" class=\"widget widget_text\">";
+print "<section id=\"text-" . $i2 . "\" class=\"widget widget_text\">";
 print "<div class=\"widget-wrap\">";		
 print @$node->field_page_3_content['und'][$i2]['value'];
 print "</div>";
@@ -268,14 +268,15 @@ $i++;
 <div class="widget-area <?php print convertToWord($i); ?>">
 <div class="wrap">
 <?php
-$i2 = 0;
-while($i2 <= $i){
-print "<section id=\"text-2\" class=\"widget widget_text\">";		
+$i3 = 0;
+while($i3 <= $i){
+print "<section id=\"text-" . $i2 . "\" class=\"widget widget_text\">";		
 print "<div class=\"textwidget\">";
-print @$node->field_page_4_content['und'][$i2]['value'];
+print @$node->field_page_4_content['und'][$i3]['value'];
 print "</div>";
 print "</section>";
 $i2++;
+$i3++;
 }
 ?>
 </div></div></div>
@@ -298,14 +299,15 @@ $i++;
 <div class="widget-area <?php print convertToWord($i); ?>">
 <div class="wrap">
 <?php
-$i2 = 0;
-while($i2 <= $i){
-print "<section id=\"text-2\" class=\"widget widget_text\">";
+$i4 = 0;
+while($i4 <= $i){
+print "<section id=\"text-" . $i2 . "\" class=\"widget widget_text\">";
 print "<div class=\"widget-wrap\">";		
-print @$node->field_page_5_content['und'][$i2]['value'];
+print @$node->field_page_5_content['und'][$i4]['value'];
 print "</div>";
 print "</section>";
 $i2++;
+$i4++;
 }
 ?>
 </div></div></div>
