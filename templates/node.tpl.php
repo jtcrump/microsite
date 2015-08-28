@@ -116,6 +116,7 @@ $file2 = @file_load($content['field_page_2_bg_image'][0]['#item']['fid']);
 $file3 = @file_load($content['field_page_3_bg_image'][0]['#item']['fid']);
 $file4 = @file_load($content['field_page_4_bg_image'][0]['#item']['fid']);
 $file5 = @file_load($content['field_page_5_bg_image'][0]['#item']['fid']);
+$file6 = @file_load($content['field_nav_image'][0]['#item']['fid']);
 ?>
 
 
@@ -126,8 +127,15 @@ if($node->type == 'microsite'){
 <style type="text/css">
 /* image in the main menu on far left */
 .nav-primary .small-site-title {
-	background-image: url(<?php echo $path; ?>/images/menu-image.png);
+	background-image: url(<?php print file_create_url(@$file6->uri); ?>);
 }
+
+
+
+
+
+
+
 
 /* splash page small image that's a link */
 .site-title a { 
@@ -288,7 +296,7 @@ $i3++;
 <?php
 if(strlen(@$content['field_page_5_content'][0]['#markup']) > 5){
 ?>
-<!--- start the forth page after the intro splash --->
+<!--- start the fourth page after the intro splash --->
 <div id="front-page-4" class="front-page-4 image-section">
 <?php 
 $i = 0;
@@ -311,7 +319,7 @@ $i4++;
 }
 ?>
 </div></div></div>
-<!--- end the forth page after the intro splash --->
+<!--- end the fourth page after the intro splash --->
 <?php
 }
 ?>
