@@ -225,7 +225,7 @@ $i2++;
 
 
 <?php
-if(strlen(@$content['field_page_3_content'][0]['#markup']) > 1){
+if(strlen(@$content['field_page_3_content'][0]['#markup']) > 5){
 ?>
 <!--- start the second page after the intro splash --->
 <div id="front-page-2" class="front-page-2 image-section">
@@ -255,7 +255,7 @@ $i2++;
 ?>
 
 <?php
-if(strlen(@$content['field_page_4_content'][0]['#markup']) > 1){
+if(strlen(@$content['field_page_4_content'][0]['#markup']) > 5){
 ?>
 <!--- start the third page after the intro splash --->
 <div id="front-page-3" class="front-page-3 solid-section">
@@ -286,7 +286,7 @@ $i3++;
 ?>
 
 <?php
-if(strlen(@$content['field_page_5_content'][0]['#markup']) > 1){
+if(strlen(@$content['field_page_5_content'][0]['#markup']) > 5){
 ?>
 <!--- start the forth page after the intro splash --->
 <div id="front-page-4" class="front-page-4 solid-section">
