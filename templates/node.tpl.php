@@ -81,31 +81,31 @@ switch ($num) {
 		$num = "zero";
 		break;
 	case 1:
-		$num = "one";
+		$num = "one-widget";
 		break;
 	case 2:
-		$num = "two";
+		$num = "two-widgets";
 		break;
 	case 3:
-		$num = "three";
+		$num = "three-widgets";
 		break;
 	case 4:
-		$num = "four";
+		$num = "four-widgets";
 		break;
 	case 5:
-		$num = "five";
+		$num = "five-widgets";
 		break;
 	case 6:
-		$num = "six";
+		$num = "six-widgets";
 		break;
 	case 7:
-		$num = "seven";
+		$num = "seven-widgets";
 		break;
 	case 8:
-		$num = "eight";
+		$num = "eight-widgets";
 		break;
 	default:
-		$num = "one";
+		$num = "one-widget";
 	}
 return $num;
 }
@@ -200,7 +200,7 @@ while(strlen(@$content['field_page_2_content'][$i]['#markup']) > 5){
 $i++;
 } 
 ?>
-<div class="widget-area <?php print convertToWord($i); ?>-widget">
+<div class="widget-area <?php print convertToWord($i); ?>">
 <div class="wrap">
 <?php
 $i2 = 0;
@@ -217,6 +217,14 @@ $i2++;
 </div></div></div>
 <!--- end the first page after the intro splash --->
 
+
+
+
+
+
+
+
+
 <?php
 if(strlen(@$content['field_page_3_content'][0]['#markup']) > 1){
 ?>
@@ -228,7 +236,7 @@ while(strlen(@$content['field_page_3_content'][$i]['#markup']) > 5){
 $i++;
 } 
 ?>
-<div class="widget-area <?php print convertToWord($i); ?>-widget">
+<div class="widget-area <?php print convertToWord($i); ?>">
 <div class="wrap">
 <?php
 $i2 = 0;
@@ -243,7 +251,7 @@ $i2++;
 }
 ?>
 </div></div></div>
-<!--- end the first page after the intro splash --->
+<!--- end the second page after the intro splash --->
 <?php
 }
 ?>
@@ -259,7 +267,7 @@ while(strlen(@$content['field_page_4_content'][$i]['#markup']) > 5){
 $i++;
 } 
 ?>
-<div class="widget-area <?php print convertToWord($i); ?>-widget">
+<div class="widget-area <?php print convertToWord($i); ?>">
 <div class="wrap">
 <?php
 $i2 = 0;
@@ -290,7 +298,7 @@ while(strlen(@$content['field_page_5_content'][$i]['#markup']) > 5){
 $i++;
 } 
 ?>
-<div class="widget-area <?php print convertToWord($i); ?>-widget">
+<div class="widget-area <?php print convertToWord($i); ?>">
 <div class="wrap">
 <?php
 $i2 = 0;
