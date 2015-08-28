@@ -289,7 +289,7 @@ $i3++;
 if(strlen(@$content['field_page_5_content'][0]['#markup']) > 5){
 ?>
 <!--- start the forth page after the intro splash --->
-<div id="front-page-4" class="front-page-4 solid-section">
+<div id="front-page-4" class="front-page-4 image-section">
 <?php 
 $i = 0;
 while(strlen(@$content['field_page_5_content'][$i]['#markup']) > 5){
