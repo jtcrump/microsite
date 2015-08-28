@@ -258,7 +258,7 @@ $i2++;
 if(strlen(@$content['field_page_4_content'][0]['#markup']) > 1){
 ?>
 <!--- start the third page after the intro splash --->
-<div id="front-page-3" class="front-page-3 solid-section">
+<div id="front-page-3" class="front-page-3 image-section">
 <?php 
 $i = 0;
 while(strlen(@$content['field_page_4_content'][$i]['#markup']) > 5){
