@@ -16,13 +16,32 @@
  * Implements template_preprocess_page
  *
  */
-function tulane_preprocess_page(&$variables) {
+function tulane_preprocess_html(&$variables) {
 
+foreach(@$variables['page']['content']['system_main']['nodes'] as $key => $value){
+// echo $key . "<br />";
+break;
 }
+
+// foreach(@$variables['page']['content']['system_main']['nodes'][$key] as $key2 => $value){
+// echo $key2 . "<br />";
+// }
+
+
+// foreach(@$variables['page']['content']['system_main']['nodes'][$key]['field_page_1_bg_image'][0] as $key3 => $value){
+// echo $key3 . "<br />";
+// }
+
+$variables['bg2'] = @$variables['page']['content']['system_main']['nodes'][$key]['field_page_2_bg_image'][0]['#item']['filename'] ;
+}
+
+
 
 /**
  * Implements template_preprocess_node
  *
  */
-//function tulane_preprocess_node(&$variables) {
-//}
+function tulane_preprocess_node(&$variables) {
+// print "bar</br />";
+// exit();
+}

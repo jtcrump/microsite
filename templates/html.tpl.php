@@ -74,7 +74,7 @@ url(<?php print $path; ?>/fonts/CharisSIL/CharisSIL-BI.svg#charis_silbold_italic
   font-style: italic;
 }
 #front-page-1 {
-background-image: url(<?php print $path; ?>/images/bg.jpg);
+background-image: url(<?php print $path; ?>/images/<?php print $bg2; ?>);
 }
 </style>
 
@@ -103,6 +103,7 @@ print "<script type='text/javascript' src='" . $path . "/js/foundation.min.js'><
 <body class="home blog custom-header header-image header-full-width full-width-content cafe-pro-home" itemscope="itemscope" itemtype="http://schema.org/WebPage">
 
 <?php
+
 
 // echo $variables['classes_array'][7];
 // echo "<br />";
