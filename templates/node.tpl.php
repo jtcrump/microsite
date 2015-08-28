@@ -207,9 +207,8 @@ $i2 = 0;
 while($i2 <= $i){
 print "<section id=\"text-2\" class=\"widget widget_text\">";
 print "<div class=\"widget-wrap\">";		
-print "<div class=\"textwidget\">";
 print @$content['field_page_2_content'][$i2]['#markup'];
-print "</div></div>";
+print "</div>";
 print "</section>";
 $i2++;
 }
@@ -243,9 +242,8 @@ $i2 = 0;
 while($i2 <= $i){
 print "<section id=\"text-2\" class=\"widget widget_text\">";
 print "<div class=\"widget-wrap\">";		
-print "<div class=\"textwidget\">";
 print @$node->field_page_3_content['und'][$i2]['value'];
-print "</div></div>";
+print "</div>";
 print "</section>";
 $i2++;
 }
@@ -272,11 +270,10 @@ $i++;
 <?php
 $i2 = 0;
 while($i2 <= $i){
-print "<section id=\"text-2\" class=\"widget widget_text\">";
-print "<div class=\"widget-wrap\">";		
+print "<section id=\"text-2\" class=\"widget widget_text\">";		
 print "<div class=\"textwidget\">";
 print @$node->field_page_4_content['und'][$i2]['value'];
-print "</div></div>";
+print "</div>";
 print "</section>";
 $i2++;
 }
@@ -305,9 +302,8 @@ $i2 = 0;
 while($i2 <= $i){
 print "<section id=\"text-2\" class=\"widget widget_text\">";
 print "<div class=\"widget-wrap\">";		
-print "<div class=\"textwidget\">";
 print @$node->field_page_5_content['und'][$i2]['value'];
-print "</div></div>";
+print "</div>";
 print "</section>";
 $i2++;
 }
