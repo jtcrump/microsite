@@ -1506,7 +1506,8 @@ img.alignright,
 
 .image-section .widget {
 	background-color: #fff;
-	padding: 10px;
+	padding: 0px;
+    border-radius: 25px;
 }
 
 .image-section .widget-wrap {
