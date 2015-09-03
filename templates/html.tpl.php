@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
   <title><?php print $head_title; ?></title>
 <?php 
+
 $theme_name = "TulaneMicrosite"; 
 $path = "/" . drupal_get_path('theme', variable_get('theme_default', NULL));
 ?>
@@ -78,7 +79,7 @@ url(<?php print $path; ?>/fonts/CharisSIL/CharisSIL-BI.svg#charis_silbold_italic
 
  
 <?php
-print "<link rel='stylesheet' href='" . $path . "/style/microsite.css?v=5' type='text/css'>";
+print "<link rel='stylesheet' href='" . $path . "/style/microsite.css?v=6' type='text/css'>";
 print "<script type='text/javascript' src='" . $path . "/js/jquery.js?ver=1.11.2'></script>";
 print "<script type='text/javascript' src='" . $path . "/js/jquery-migrate.min.js?ver=1.2.1'></script>";
 print "<script type='text/javascript' src='" . $path . "/js/global.js?ver=1.0.0'></script>";
