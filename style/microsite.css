@@ -2411,6 +2411,6 @@ img.emoji {
 }
 
 
-            .rwd-line { display: inline; }
+            span.rwd-line { display: inline;white-space: nowrap; }
 
         
