@@ -2408,3 +2408,10 @@ img.emoji {
 	background: none !important;
 	padding: 0 !important;
 }
+
+        .rwd-line { display: block; }
+        
+        @media screen and (min-width: 768px){
+            .rwd-line { display: inline; }
+        }
+        
