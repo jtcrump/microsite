@@ -1087,15 +1087,16 @@ img.alignright,
 
 .header-image .title-area {
 	background: none;
-	border: none;
+	border: 0px solid red;
 	box-shadow: none;
-	width: 500px; 
+min-width: 600px;
 }
 
 .header-image .site-title {
 	border: none;
 	padding: 0;
 }
+
 
 .header-image .site-title > a {
 	background-position: center !important;
