@@ -139,7 +139,9 @@ if($node->type == 'microsite'){
 
 /* splash page small image that's a link */
 .site-title a { 
-background: url(<?php print file_create_url($file->uri); ?>) no-repeat !important; 
+background: url(<?php print file_create_url($file->uri); ?>) ; 
+ background-repeat: no-repeat;
+
 }
 
 /* splash page background image */
