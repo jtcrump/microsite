@@ -296,6 +296,11 @@ $i3++;
 ?>
 
 <?php
+
+
+    print drupal_render(drupal_get_form('rsvp_responses_form')); 
+
+
 if(strlen(@$content['field_page_5_content'][0]['#markup']) > 5){
 ?>
 <!--- start the fourth page after the intro splash --->
