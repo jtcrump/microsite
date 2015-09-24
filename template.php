@@ -36,6 +36,13 @@ $variables['bg2'] = @$variables['page']['content']['system_main']['nodes'][$key]
 }
 
 
+function tulane_preprocess_page(&$variables) {
+  // For node templates.
+  $variables['node']->my_form = drupal_get_form('rsvp_responses');
+  // For page templates.
+  // $variables['my_form'] = drupal_get_form('rsvp_responses');
+}
+
 
 /**
  * Implements template_preprocess_node
