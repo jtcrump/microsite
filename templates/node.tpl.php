@@ -143,8 +143,14 @@ background: url(<?php print file_create_url($file->uri); ?>) ;
  background-repeat: no-repeat;
 }
 
+<?php
+// this will set the height of the splash screen logo. Width is auto
+$size = getimagesize(file_create_url(@$file->uri));
+$height = $size[1];
+?>
+
 .header-image .site-title > a {
-	min-height: 229px;
+	min-height: <?php print $height; ?>px;
 }
 
 /* splash page background image */
@@ -176,6 +182,7 @@ background: url(<?php print file_create_url($file->uri); ?>) ;
 </div>
 </div>
 </header>
+
 
 
 
