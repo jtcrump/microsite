@@ -141,6 +141,7 @@ if($node->type == 'microsite'){
 .site-title a { 
 background: url(<?php print file_create_url($file->uri); ?>) ; 
  background-repeat: no-repeat;
+
 }
 
 <?php
@@ -151,6 +152,7 @@ $height = $size[1];
 
 .header-image .site-title > a {
 	min-height: <?php print $height; ?>px;
+width: 100%;
 }
 
 /* splash page background image */
@@ -310,8 +312,8 @@ $i3++;
 
 print "<div id=\"front-page-4\" class=\"front-page-4 image-section\">";
 
-
-
+$block = module_invoke('webform', 'block_view', 'client-block-11');
+print render($block['content']);
 
 print "</div>";
 
