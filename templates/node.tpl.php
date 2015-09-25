@@ -309,7 +309,10 @@ $i3++;
 <?php
 
 print "<div id=\"front-page-4\" class=\"front-page-4 image-section\">";
-print render($my_form); 
+
+
+
+
 print "</div>";
 
 if(strlen(@$content['field_page_5_content'][0]['#markup']) > 5){
