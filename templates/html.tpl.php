@@ -109,6 +109,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-5D8S6D');</script>
 <!-- End Google Tag Manager -->
+
+<?php
+//  print '<pre>';
+ // var_dump(get_defined_vars()); 
+// print '</pre>';
+?>
+
 <?php
 
 

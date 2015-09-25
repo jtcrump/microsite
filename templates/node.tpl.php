@@ -141,12 +141,16 @@ if($node->type == 'microsite'){
 .site-title a { 
 background: url(<?php print file_create_url($file->uri); ?>) ; 
  background-repeat: no-repeat;
+}
 
+.header-image .site-title > a {
+	min-height: 229px;
 }
 
 /* splash page background image */
 .front-page-header {
-	background-image: url(<?php print file_create_url(@$file1->uri); ?>); 
+	background-image: url(<?php print file_create_url(@$file1->uri); ?>);
+ 
 }
 .front-page-1 {
 	background-image: url(<?php print file_create_url(@$file2->uri); ?>);
