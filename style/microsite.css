@@ -1089,7 +1089,7 @@ img.alignright,
 	background: none;
 	border: 0px solid red;
 	box-shadow: none;
-min-width: 600px;
+ width: 600px;
 }
 
 .header-image .site-title {
