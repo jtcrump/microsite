@@ -10,6 +10,7 @@ display: none;
 
 
 
+
 /* # Table of Contents
 - HTML5 Reset
 	- Baseline Normalize
@@ -879,6 +880,7 @@ img.alignright,
 .widget-area .widget {
 	margin-bottom: 60px;
 	word-wrap: break-word;
+
 }
 
 .widget-area p:last-child,
@@ -1089,7 +1091,7 @@ img.alignright,
 	background: none;
 	border: 0px solid red;
 	box-shadow: none;
- width: 600px;
+width: 600px;
 }
 
 .header-image .site-title {
@@ -1450,6 +1452,7 @@ img.alignright,
 	** 28px --> 20px
 	*/
 	font-size: 20px;
+
 }
 
 .front-page-3,
@@ -1509,12 +1512,14 @@ img.alignright,
 	background-color: #fff;
 	padding: 0px;
     border-radius: 25px;
+
 }
 
 .image-section .widget-wrap {
 	border: 2px solid #535353;
 	padding: 40px;
     border-radius: 25px;
+
 }
 
 .home-even .featuredpage:nth-of-type(odd),
@@ -1986,6 +1991,12 @@ li.comment.depth-1 {
 }
 
 @media only screen and (max-width: 800px) {
+
+/* hack for inauguration site box spacing */
+#text-3 {
+margin-top: 20px;
+}
+
 
 	.site-inner,
 	.wrap {
