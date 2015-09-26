@@ -312,8 +312,11 @@ $i3++;
 
 print "<div id=\"front-page-4\" class=\"front-page-4 image-section\">";
 
-$block = module_invoke('webform', 'block_view', 'client-block-11');
-print render($block['content']);
+
+print render($my_form);
+
+// $block = module_invoke('webform', 'block_view', 'client-block-11');
+// print render($block['content']);
 
 print "</div>";
 
