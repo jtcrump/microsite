@@ -175,10 +175,11 @@ width: 100%;
 </style>
 
 
-
+<div class="splash-text">
+<?php print @$content['field_splash_page_text'][0]['#markup']; ?>
+</div>
 
 <header class="site-header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
-
 <div class="wrap">
 <div class="title-area">
 <h1 class="site-title" itemprop="headline">
@@ -189,9 +190,7 @@ width: 100%;
 </div>
 </header>
 
-<div class="splash-text">
-<?php print @$content['field_splash_page_text'][0]['#markup']; ?>
-</div>
+
 
 
 <nav class="nav-primary" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
