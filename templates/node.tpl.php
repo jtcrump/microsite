@@ -312,9 +312,8 @@ $i3++;
 
 // $block = module_invoke('webform', 'block_view', 'client-block-428'); // local test form
  $block = module_invoke('webform', 'block_view', 'client-block-11'); // inauguration site rsvp form
-
 if(strlen($block['content']) > 100){
-print "<div id=\"front-page-4\" class=\"front-page-4 image-section\">";
+print "<div id=\"front-page-5\" class=\"front-page-4 image-section\">";
 print "<div class=\"form-wrapper\">";
 print render($block['content']);
 print "</div></div>";
