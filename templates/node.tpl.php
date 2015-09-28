@@ -174,11 +174,13 @@ width: 100%;
 }
 </style>
 
+<?php
 if(isset($content['field_splash_page_text'][0]['#markup'])){
-<div class="splash-text">
-<?php print @$content['field_splash_page_text'][0]['#markup']; ?>
-</div>
+print "<div class=\"splash-text\">";
+print @$content['field_splash_page_text'][0]['#markup'];
+print "</div>";
 }
+?>
 
 <header class="site-header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
 <div class="wrap">
