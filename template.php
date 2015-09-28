@@ -20,7 +20,7 @@
  */
 function tulane_preprocess_html(&$variables) {
 
-	if(isset(@$variables['page']['content']['system_main']['nodes']){
+	if(isset($variables['page']['content']['system_main']['nodes'])){
 		foreach(@$variables['page']['content']['system_main']['nodes'] as $key => $value){
 		// echo $key . "<br />";
 		break;
