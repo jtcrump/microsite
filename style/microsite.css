@@ -2439,9 +2439,10 @@ border: 2px solid black;
 
 .form-wrapper input{
 border-radius: 5px;
+background-color: #e8e9e9;
 }
 .form-wrapper label{
-font-size:18px;
+font-size:17px;
 color: white;
 font-family: Sans-Serif;
 }
