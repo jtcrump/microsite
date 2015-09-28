@@ -2442,17 +2442,18 @@ border-radius: 5px;
 background-color: #e8e9e9;
 }
 .form-wrapper label{
-font-size:17px;
+font-size:18px;
 color: white;
-font-family: Sans-Serif;
+/* font-family: Sans-Serif; */
 }
 .description{
 font-style: italic;
 font-size:14px;
 color: white;
-font-family: Sans-Serif;
+/* font-family: Sans-Serif; */
 margin-top: -15px;
 }
 .form-submit {
 color:black !important;
+font-family: Serif;
 }
