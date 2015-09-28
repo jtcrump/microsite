@@ -2437,6 +2437,9 @@ img.emoji {
 border: 2px solid black;
 }
 
+.form-wrapper input{
+border-radius: 5px;
+}
 .form-wrapper label{
 font-size:18px;
 color: white;
