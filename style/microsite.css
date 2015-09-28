@@ -2457,3 +2457,26 @@ margin-top: -15px;
 color:black !important;
 font-family: Serif;
 }
+
+.splash-text{
+position:relative;
+margin: 0 auto;
+z-index:50;
+	color: white;
+	background: rgb(70, 50, 50);
+	background: rgba(70, 50, 50, .7);
+	margin-top: -300px;
+	padding:30px 10px 10px 10px;
+	border-radius: 25px;
+	border: 2px solid black;
+	max-width:600px;
+}
+.splash-text a{
+ color: #008cba;
+}
+.splash-text a:hover{
+ color: #008cba;
+}
+.splash-text a:visited{
+ color: #008cba;
+}

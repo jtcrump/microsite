@@ -174,7 +174,11 @@ width: 100%;
 }
 </style>
 
+
+
+
 <header class="site-header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+
 <div class="wrap">
 <div class="title-area">
 <h1 class="site-title" itemprop="headline">
@@ -185,7 +189,9 @@ width: 100%;
 </div>
 </header>
 
-
+<div class="splash-text">
+<?php print @$content['field_splash_page_text'][0]['#markup']; ?>
+</div>
 
 
 <nav class="nav-primary" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
@@ -310,12 +316,19 @@ $i3++;
 
 <?php
 
-// $block = module_invoke('webform', 'block_view', 'client-block-428'); // local test form
- $block = module_invoke('webform', 'block_view', 'client-block-11'); // inauguration site rsvp form
+$block = module_invoke('webform', 'block_view', 'client-block-428'); // local test form
 if(strlen($block['content']) > 100){
 print "<div id=\"front-page-5\" class=\"front-page-4 image-section\">";
 print "<div class=\"form-wrapper\">";
 print render($block['content']);
+print "</div></div>";
+}
+
+$block2 = module_invoke('webform', 'block_view', 'client-block-11'); // inauguration site rsvp form
+if(strlen($block2['content']) > 100){
+print "<div id=\"front-page-5\" class=\"front-page-4 image-section\">";
+print "<div class=\"form-wrapper\">";
+print render($block2['content']);
 print "</div></div>";
 }
 
