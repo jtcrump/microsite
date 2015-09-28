@@ -54,5 +54,5 @@ function tulane_preprocess_node(&$variables) {
  */
 function tulane_preprocess_page(&$variables) {
 
- $variables['node']->my_form = drupal_get_form('rsvp_responses');
+ // $variables['node']->my_form = drupal_get_form('rsvp_responses');
 }
