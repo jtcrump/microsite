@@ -2260,7 +2260,7 @@ li.comment.depth-1 {
 #front-page-1 {
 background-color: #63c8ea ;
  background-repeat: repeat;
-   position: relative;
+   /* position: relative; */
     overflow: hidden;
 }
 
