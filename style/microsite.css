@@ -2422,6 +2422,14 @@ img.emoji {
 border: 2px solid black;
 }
 
+.form-wrapper p{
+color: white;
+}
+
+.form-wrapper a:hover{
+color: white;
+}
+
 .form-wrapper input{
 border-radius: 5px;
 background-color: #e8e9e9;
