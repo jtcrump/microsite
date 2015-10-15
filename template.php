@@ -38,7 +38,9 @@ function tulane_preprocess_html(&$variables) {
 
 
 
-
+function tulane_form_webform_client_form_alter(&$form, $form_state, $form_id) {
+    $form['actions']['submit']['#attributes']['id'] = 'edit-webform-ajax-submit-'.$form['#node']->nid;
+}
 
 
 /**
