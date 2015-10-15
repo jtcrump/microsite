@@ -2409,17 +2409,61 @@ img.emoji {
 	padding: 0 !important;
 }
 
-.webform-client-form{
-border-radius: 25px;
-padding: 20px;
-border: 1px solid #ccc;
-margin-left: auto;
-margin-right: auto;
-max-width: 400px;
-/* RGBa with 0.6 opacity */
-background: rgba(15, 15, 46, 0.6);
+       
+.form-wrapper{
+	margin-top:70px;
+	max-width:500px;
+	margin-left:auto;
+	margin-right:auto;
+	background: rgb(70, 50, 50);
+	background: rgba(70, 50, 50, .7);
+	padding:40px;
+	border-radius: 25px;
+border: 2px solid black;
 }
 
-.webform-client-form input{
+.form-wrapper input{
 border-radius: 5px;
+background-color: #e8e9e9;
+}
+.form-wrapper label{
+font-size:18px;
+color: white;
+/* font-family: Sans-Serif; */
+}
+.description{
+font-style: italic;
+font-size:14px;
+color: white;
+/* font-family: Sans-Serif; */
+margin-top: -15px;
+}
+.form-submit {
+color:black !important;
+font-family: Serif;
+}
+
+.splash-text{
+position:relative;
+margin: 0 auto;
+z-index:50;
+	color: white;
+	background: rgb(70, 50, 50);
+	background: rgba(70, 50, 50, .7);
+
+	padding:30px 10px 10px 10px;
+	border-radius: 25px;
+	border: 2px solid black;
+	max-width:600px;
+margin-top:0px;
+margin-bottom: -160px;
+}
+.splash-text a{
+ color: #008cba;
+}
+.splash-text a:hover{
+ color: #008cba;
+}
+.splash-text a:visited{
+ color: #008cba;
 }
