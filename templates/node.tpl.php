@@ -193,8 +193,15 @@ print "</div>";
 </div>
 </header>
 
-
-
+<?php
+// $block3 = module_invoke('webform', 'block_view', 'client-block-3'); // inauguration site rsvp form
+// if(strlen($block3['content']) > 100){
+// print "<div id=\"front-page-5\" class=\"front-page-4 image-section\">";
+// print "<div class=\"form-wrapper\">";
+// print render($block3['content']);
+// print "</div></div>";
+}
+?>
 
 <nav class="nav-primary" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 <div class="wrap">
@@ -317,7 +324,7 @@ $i3++;
 ?>
 
 <?php
-
+/*
 $block = module_invoke('webform', 'block_view', 'client-block-428'); // local test form
 if(strlen($block['content']) > 100){
 print "<div id=\"front-page-5\" class=\"front-page-4 image-section\">";
@@ -333,6 +340,9 @@ print "<div class=\"form-wrapper\">";
 print render($block2['content']);
 print "</div></div>";
 }
+*/
+
+
 
 
 if(strlen(@$content['field_page_5_content'][0]['#markup']) > 5){
