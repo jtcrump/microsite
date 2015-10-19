@@ -194,13 +194,15 @@ print "</div>";
 </header>
 
 <?php
-// $block3 = module_invoke('webform', 'block_view', 'client-block-3'); // inauguration site rsvp form
-// if(strlen($block3['content']) > 100){
-// print "<div id=\"front-page-5\" class=\"front-page-4 image-section\">";
-// print "<div class=\"form-wrapper\">";
-// print render($block3['content']);
-// print "</div></div>";
+/*
+ $block3 = module_invoke('webform', 'block_view', 'client-block-3'); // inauguration site rsvp form
+ if(strlen($block3['content']) > 100){
+ print "<div id=\"front-page-5\" class=\"front-page-4 image-section\">";
+ print "<div class=\"form-wrapper\">";
+ print render($block3['content']);
+ print "</div></div>";
 }
+*/
 ?>
 
 <nav class="nav-primary" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
