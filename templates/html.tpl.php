@@ -88,7 +88,7 @@ print "<script type='text/javascript' src='" . $path . "/js/home.js?ver=1.0.0'><
 print "<script type='text/javascript' src='" . $path . "/js/jquery.scrollTo.min.js'></script>";
 print "<script type='text/javascript' src='" . $path . "/js/jquery.localScroll.min.js'></script>";
 } else {
-print "<link rel='stylesheet' href='" . $path . "/css/tulane.css' type='text/css'>";
+print "<link rel='stylesheet' href='" . $path . "/css/tulane.css?v2' type='text/css'>";
 print "<link rel='stylesheet' href='" . $path . "/css/foundation.min.css' type='text/css'>";
 print "<script type='text/javascript' src='" . $path . "/js/vendor/modernizr.js'></script>";
 print "<script type='text/javascript' src='" . $path . "/js/foundation.min.js'></script>";
