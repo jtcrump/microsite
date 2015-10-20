@@ -41,9 +41,10 @@
 // Comment out this import if you don't want to use Bourbon, a replacement for Compass mixins.
 @import "bourbon";
 
+
 // Import our mixins early so they can be used by other partials.
 // Optional.
-@import "base/mixins";
+//@import "base/mixins";
 
 // Common file is where you place common utility classes to extend or
 // parametrics.
@@ -64,8 +65,6 @@
 @import "layout/main";
 @import "layout/aside";
 @import "layout/footer";
-@import "tulane/text-sizes";  
-@import "tulane/colors";
 
 // Modules
 // @import "modules/block";

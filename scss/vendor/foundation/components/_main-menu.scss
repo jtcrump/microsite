@@ -1,0 +1,53 @@
+@mixin alpha-attribute($attribute, $color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  #{$attribute}: $solid-color;
+  #{$attribute}: $color;
+}
+
+
+
+
+
+#main-menu{
+padding-top:0px;
+@include alpha-attribute('background-color', rgba($greySpanishMoss, 0.9), $greySpanishMoss);
+margin-left:15%;
+}
+
+.top-bar-section{
+border: 0px solid blue;
+}
+
+.main-nav {
+background: none !important;
+border: 0px solid yellow;
+margin-left: 300px;
+}
+
+.main-nav li{
+background: #777;
+margin-bottom: 2px;
+}
+
+.main-nav li a{
+font-size: 15px !important;
+background: none !important;
+text-decoration: none;
+}
+
+.main-nav li a:hover{
+background: #001F00 !important;
+/* background: #555 !important; */
+}
+
+.main-nav li ul li{
+
+}
+
+.main-nav li ul li a{
+background: #001F00 !important;
+/* background: #555 !important; 
+margin-left: -20px !important; */
+}

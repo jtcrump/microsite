@@ -6,31 +6,34 @@
 @import "grid";
 @import "buttons";
 
+@mixin alpha-attribute($attribute, $color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  #{$attribute}: $solid-color;
+  #{$attribute}: $color;
+}
+
+
 //
 // Top Bar Variables
 //
 $include-html-top-bar-classes: $include-html-classes !default;
 
 // Background color for the top bar
-$topbar-bg-color: $primary-color !default;
+$topbar-bg-color: #333 !default;
 $topbar-bg: $topbar-bg-color !default;
 
 // Height and margin
-$topbar-height: 145px !default;
+$topbar-height: 45px !default;
 $topbar-margin-bottom: 0 !default;
-
-.top-fixed-nav{
-color: #fff !important;
-
-}
 
 // Controlling the styles for the title in the top bar
 $topbar-title-weight: $font-weight-normal !default;
-// $topbar-title-font-size: rem-calc(17) !default;
-$topbar-title-font-size: 40px !default;
+$topbar-title-font-size: rem-calc(17) !default;
 
 // Style the top bar dropdown elements
-$topbar-dropdown-bg: #333 !default;
+$topbar-dropdown-bg: none !default;
 $topbar-dropdown-link-color: #fff !default;
 $topbar-dropdown-link-bg: #333 !default;
 $topbar-dropdown-link-weight: $font-weight-normal !default;
@@ -143,16 +146,22 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
         .top-bar-section {
           z-index: 98;
           margin-top: $topbar-height;
+
         }
       }
     }
+
+.toggle-topbar a{
+margin-top: 20px;
+}
 
     .top-bar {
       overflow: hidden;
       height: $topbar-height;
       line-height: $topbar-height;
       position: relative;
-      background: $topbar-bg;
+@include alpha-attribute('background-color', rgba($greySpanishMoss, 0.9), $greySpanishMoss);
+      /* background: $topbar-bg; */
       margin-bottom: $topbar-margin-bottom;
 
       // Topbar Global list Styles
@@ -171,7 +180,6 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
       .button, button {
         padding-top: .45rem;
         padding-bottom: .35rem;
-        margin-bottom: 0;
         font-size: $topbar-button-font-size;
           // position: relative;
           // top: -1px;
@@ -186,8 +194,7 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
 
       .name {
         height: $topbar-height;
-        margin-top: 20px;
-        margin-bottom: -20px;
+        margin: 0;
         font-size: $rem-base;
 
         h1 {
@@ -206,12 +213,15 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
 
       // Menu toggle button on small devices
       .toggle-topbar {
-        position: absolute;
+margin-top: 20px;
+height: 38px;
+margin-bottom: 2px;
+        position: relative;
         #{$opposite-direction}: 0;
-        top: 0;
+
 
         a {
-          color: $topbar-link-color;
+   
           text-transform: $topbar-menu-link-transform;
           font-size: $topbar-menu-link-font-size;
           font-weight: $topbar-menu-link-weight;
@@ -249,7 +259,7 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
               // $color - icon color
               // $hover-color - icon color during hover, here it is set the same as $color because the values are changed on line 264
               // $offcanvas - Set to false of @include in topbar
-              @include hamburger(16px, false, 0, 1px, 6px, $topbar-menu-icon-color, $topbar-menu-icon-color, false);
+            /*  @include hamburger(16px, false, 0, 1px, 6px, $topbar-menu-icon-color, $topbar-menu-icon-color, false); */
             }
           }
         }
@@ -258,12 +268,12 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
       // Change things up when the top-bar is expanded
       &.expanded {
         height: auto;
-        background: transparent;
-
-        .title-area { background: $topbar-bg; }
+        /* background: transparent; */
+@include alpha-attribute('background-color', rgba($greySpanishMoss, 0.9), $greySpanishMoss);
+        /* .title-area { background: $topbar-bg; } */
 
         .toggle-topbar {
-          a { color: $topbar-menu-link-color-toggled;
+          a { /* color: $topbar-menu-link-color-toggled; */
             &::after {
               // Shh, don't tell, but box-shadows create the menu icon :)
               box-shadow: 0 10px 0 1px $topbar-menu-icon-color-toggled,
@@ -277,6 +287,9 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
 
 
     }
+
+
+
 
     // Right and Left Navigation that stacked by default
     .top-bar-section {
@@ -301,6 +314,7 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
         height: 1px;
         width: 100%;
       }
+
 
       ul li {
         background: $topbar-dropdown-bg;
@@ -441,7 +455,9 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
     // Top Bar styles intended for screen sizes above the breakpoint.
     @media #{$topbar-media-query} {
       .top-bar {
-        background: $topbar-bg;
+
+@include alpha-attribute('background-color', rgba($greySpanishMoss, 0.9), $greySpanishMoss);
+       /* background: $topbar-bg; */
         @include clearfix;
         overflow: visible;
 
@@ -458,7 +474,9 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
           top: $topbar-button-top;
         }
 
-        &.expanded { background: $topbar-bg; }
+        &.expanded { 
+@include alpha-attribute('background-color', rgba($greySpanishMoss, 0.9), $greySpanishMoss);
+/* background: $topbar-bg; */ }
       }
 
       .contain-to-grid .top-bar {

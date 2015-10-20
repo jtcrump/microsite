@@ -2,8 +2,6 @@
 @charset "UTF-8";
 
 // Behold, here are all the Foundation components.
-
-
 @import
 "components/accordion",
 "components/alert-boxes",
@@ -37,11 +35,9 @@
 "components/thumbs",
 "components/tooltips",
 "components/top-bar",
-"components/transition",
 "components/type",
 "components/offcanvas",
 "components/visibility",
-"components/search",
-"components/top-bar",
 "components/main-menu",
-"components/top_menu"; 
+"components/top_menu",
+"components/search";

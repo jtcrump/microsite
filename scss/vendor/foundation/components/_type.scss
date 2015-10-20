@@ -43,11 +43,6 @@ $subheader-bottom-margin: .5rem !default;
 $small-font-size: 60% !default;
 $small-font-color: scale-color($header-font-color, $lightness: 35%) !default;
 
-// A general <medium> styling
-$medium-font-size: 80% !default;
-$medium-font-color: scale-color($header-font-color, $lightness: 35%) !default;
-
-
 // We use these to style paragraphs
 $paragraph-font-family: inherit !default;
 $paragraph-font-weight: $font-weight-normal !default;

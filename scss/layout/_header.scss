@@ -1,10 +1,8 @@
 // Non-modular or client styles for .l-header region.
 
-// Non-modular or client styles for .l-header region.
 $screen-sm: 768px;
 $screen-md: 992px;
 $screen-lg: 1200px;
-
 
 @mixin alpha-attribute($attribute, $color, $background) {
   $percent: alpha($color) * 100%;
@@ -19,7 +17,6 @@ $screen-lg: 1200px;
     padding:10px;
 }
 
-
 .main_title
 {
 min-width:300px;
@@ -33,7 +30,7 @@ min-width:300px;
   font-family: "Times New Roman",serif;
   font-weight: normal;
   font-size: 40px;
-  color: #ffffff;
+  color: #212121;
   letter-spacing: -0.06em;
 }
 .main_title
@@ -47,7 +44,7 @@ min-width:300px;
   font-family: "Times New Roman",serif;
   font-weight: normal;
   font-size: 40px;
-  color: #ffffff;
+  color: #212121;
   letter-spacing: -0.04em;
 }
 .move
@@ -57,18 +54,70 @@ min-width:300px;
 }
 
 
+
+
+.breadcrumbs{
+display:block;
+padding:0.5625rem 0.875rem 0.5625rem;
+overflow:hidden;
+margin-left:0;
+list-style:none;
+/* border-style:solid;
+border-width:1px;
+background-color:#81abd6;
+border-color:#679ccd;
+border-radius:3px;
+*/
+}
+
+.breadcrumbs>*{margin:0;float:left;font-size:0.6875rem;line-height:0.6875rem;text-transform:uppercase;color:#00331A;}
+
+.breadcrumbs>*:hover a,.breadcrumbs>*:focus a{
+text-decoration:underline;
+}
+.breadcrumbs>* a{
+color:#00331A;
+}
+
+.breadcrumbs>*.current{
+cursor:default;color:#333;
+}
+.breadcrumbs>*.current a{
+cursor:default;color:#333;
+}
+.breadcrumbs>*.current:hover,.breadcrumbs>*.current:hover a,.breadcrumbs>*.current:focus,.breadcrumbs>*.current:focus a{
+text-decoration:none;
+}
+.breadcrumbs>*.unavailable{
+color:#999;
+}
+.breadcrumbs>*.unavailable a{color:#999;}.breadcrumbs>*.unavailable:hover,.breadcrumbs>*.unavailable:hover a,.breadcrumbs>*.unavailable:focus,.breadcrumbs>*.unavailable a:focus{text-decoration:none;color:#999;cursor:default;}
+.breadcrumbs>*:before{
+content:"/";
+color:#aaa;
+margin:0 0.55rem;
+position:relative;top:1px;
+}
+.breadcrumbs>*:first-child:before{
+content:" ";margin:0;
+}
+
+
 .header {
         background:url('../images/bg_1.jpg') no-repeat center top transparent;
 
         background-size: 100% 100%;
-        
-        	@media(max-width: 760px){
-           	background-size: 100% 180px; 
-        	}
+
                 @media(max-width: 760px){
-           	background-size: 100% 320px; 
+           	background-size: 100% 270px; 
+border: 0px solid red;
         	}
         
+                @media(max-width: 480px){
+           	background-size: 100% 315px; 
+border: 0px solid red;
+        	}
+
 	margin-bottom: 0px;
 
 
@@ -126,18 +175,25 @@ padding-bottom: 1px;
 
  
 .header-table {
+margin-left: 15%;
 border: 0px solid red;
-min-width:450px;
-padding: 4px 15px;
+
+/* min-width:450px;
 margin-top: 0px;
-margin-left:15%;
+margin-left:15%; 
+*/
+padding: 4px 0px;
+
 }
 
 #header-mid-banner ul{
+
 vertical-align: middle;
 }
 
 #header-mid-banner li{
+margin-top:16px;
+margin-bottom: -16px;
 border: 0px solid yellow;
 padding-right: 10px;
 display: inline-block;
@@ -151,10 +207,12 @@ display: inline-block;
 text-shadow: 1px 1px 2px #000;
 }
 
+
 .cell-dept { 
 border: 0px solid red;
 display: inline-block;
 text-shadow: 1px 1px 2px #000;
+margin-top: -1px;
 }
 
 .cell-dept a{ 
@@ -282,16 +340,4 @@ width:70px;
 
 .white a{
 color: #ffffff !important;
-}
-
-.main_menu_wrapper{
-margin-left: 20%;
-border:0px solid red;
-}
-
-#main-menu{
-
-padding-top:10px;
-@include alpha-attribute('background-color', rgba($greySpanishMoss, 0.9), $greySpanishMoss);
-height: 36px;
 }

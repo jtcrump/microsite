@@ -1,9 +1,6 @@
 //
 // FOUNDATION SETTINGS
 //
-$screen-sm: 768px;
-$screen-lg: 992px;
-$screen-lg: 1200px;
 
 // This is the default html and body font-size for the base rem value.
 // $rem-base: 16px;
@@ -54,7 +51,7 @@ $screen-lg: 1200px;
 // $default-float: left;
 
 // We use these as default colors throughout
- $primary-color: #00331A;
+ $primary-color: #336699;
  $secondary-color: #224568;
  $alert-color: #f04124;
  $success-color: #43AC6A;
@@ -68,10 +65,6 @@ $avenue-blue: #336699;
 $greySpanishMoss: #00331A;
 $newDarkGreen: #99CC66;
 $greenAccent: #99CC66;
-
-// font sizes
-$normal: 1.0em;
-
 
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;

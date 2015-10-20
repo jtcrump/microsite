@@ -1,17 +1,1 @@
 // Non-modular or client styles for .l-footer region.
-
-
-.footer-perm {
-@include inline-list;
-float: right;
-}
-
-.footer-perm a{
-color: $primary-color;
-font-size: $medium-font-size;
-}
-
-.footer-perm a:visited{
-color: $primary-color;
-font-size: $medium-font-size;
-}
