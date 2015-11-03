@@ -75,6 +75,8 @@ $path = "/" . drupal_get_path('theme', variable_get('theme_default', NULL));
  * @see template_preprocess_node()
  * @see template_process()
  */
+
+
 function convertToWord($num){
 switch ($num) {
 	case 0:
@@ -110,13 +112,33 @@ switch ($num) {
 return $num;
 }
 
-$file = @file_load($content['field_splash_logo'][0]['#item']['fid']);
-$file1 = @file_load($content['field_page_1_bg_image'][0]['#item']['fid']);
-$file2 = @file_load($content['field_page_2_bg_image'][0]['#item']['fid']);
-$file3 = @file_load($content['field_page_3_bg_image'][0]['#item']['fid']);
-$file4 = @file_load($content['field_page_4_bg_image'][0]['#item']['fid']);
-$file5 = @file_load($content['field_page_5_bg_image'][0]['#item']['fid']);
-$file6 = @file_load($content['field_nav_image'][0]['#item']['fid']);
+if(isset($content['field_splash_logo'][0]['#item']['fid'])){
+$file = file_load($content['field_splash_logo'][0]['#item']['fid']);
+}
+
+if(isset($content['field_page_1_bg_image'][0]['#item']['fid'])){
+$file1 = file_load($content['field_page_1_bg_image'][0]['#item']['fid']);
+}
+
+if(isset($content['field_page_2_bg_image'][0]['#item']['fid'])){
+$file2 = file_load($content['field_page_2_bg_image'][0]['#item']['fid']);
+}
+
+if(isset($content['field_page_3_bg_image'][0]['#item']['fid'])){
+$file3 = file_load($content['field_page_3_bg_image'][0]['#item']['fid']);
+}
+
+if(isset($content['field_page_4_bg_image'][0]['#item']['fid'])){
+$file4 = file_load($content['field_page_4_bg_image'][0]['#item']['fid']);
+}
+
+if(isset($content['field_page_5_bg_image'][0]['#item']['fid'])){
+$file5 = file_load($content['field_page_5_bg_image'][0]['#item']['fid']);
+}
+
+if(isset($content['field_nav_image'][0]['#item']['fid'])){
+$file6 = file_load($content['field_nav_image'][0]['#item']['fid']);
+}
 ?>
 
 
@@ -127,13 +149,13 @@ if($node->type == 'microsite'){
 <style type="text/css">
 /* image in the main menu on far left */
 .nav-primary .small-site-title {
-	background-image: url(<?php print file_create_url(@$file6->uri); ?>);
+	background-image: url(
+<?php 
+if(isset($file6)){
+print file_create_url($file6->uri); 
 }
-
-
-
-
-
+?>);
+}
 
 
 
@@ -146,7 +168,7 @@ background: url(<?php print file_create_url($file->uri); ?>) ;
 
 <?php
 // this will set the height of the splash screen logo. Width is auto
-$size = getimagesize(file_create_url(@$file->uri));
+$size = getimagesize(file_create_url($file->uri));
 $height = $size[1];
 ?>
 
@@ -157,27 +179,52 @@ width: 100%;
 
 /* splash page background image */
 .front-page-header {
-	background-image: url(<?php print file_create_url(@$file1->uri); ?>);
+	background-image: url(
+<?php 
+if(isset($file1)){
+print file_create_url($file1->uri); 
+}
+?>);
  
 }
 .front-page-1 {
-	background-image: url(<?php print file_create_url(@$file2->uri); ?>);
+	background-image: url(
+<?php 
+if(isset($file2)){
+print file_create_url($file2->uri); 
+}
+?>);
 }
 .front-page-2 {
-	background-image: url(<?php print file_create_url(@$file3->uri); ?>);
+	background-image: url(
+<?php 
+if(isset($file3)){
+print file_create_url($file3->uri); 
+}
+?>);
 }
 .front-page-3 {
-	background-image: url(<?php print file_create_url(@$file4->uri); ?>);
+	background-image: url(
+<?php 
+if(isset($file4)){
+print file_create_url($file4->uri); 
+}
+?>);
 }
 .front-page-4 {
-	background-image: url(<?php print file_create_url(@$file5->uri); ?>);
+	background-image: url(
+<?php 
+if(isset($file5)){
+print file_create_url($file5->uri); 
+}
+?>);
 }
 </style>
 
 <?php
 if(isset($content['field_splash_page_text'][0]['#markup'])){
 print "<div class=\"splash-text\">";
-print @$content['field_splash_page_text'][0]['#markup'];
+print $content['field_splash_page_text'][0]['#markup'];
 print "</div>";
 }
 ?>
@@ -186,7 +233,12 @@ print "</div>";
 <div class="wrap">
 <div class="title-area">
 <h1 class="site-title" itemprop="headline">
-<a href="<?php print @$content['field_splash_logo_link'][0]['#markup']; ?>"><?php print $node->title; ?></a>
+<a href="
+<?php 
+if(isset($content['field_splash_logo_link'][0]['#markup'])){
+print $content['field_splash_logo_link'][0]['#markup']; 
+}
+?>"><?php print $node->title; ?></a>
 </h1>
 <h2 class="site-description" itemprop="description"><?php print $node->title; ?></h2>
 </div>
