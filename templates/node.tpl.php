@@ -271,7 +271,10 @@ print $content['field_splash_logo_link'][0]['#markup'];
 <ul id="ms-menu-primary-navigation" class="ms-menu genesis-nav-ms-menu ms-menu-primary">
 <?php
 $zz = 652;
-$menu = $content['field_menu_items'][0]['#markup']; 
+$menu='';
+	if(isset($content['field_menu_items'][0]['#markup'])){
+	$menu = $content['field_menu_items'][0]['#markup']; 
+	}
 $menu = str_replace("<p>","",$menu);
 $menu = str_replace("</p>","",$menu);
 $m = explode("</a>",$menu);
