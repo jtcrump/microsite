@@ -161,7 +161,11 @@ print file_create_url($file6->uri);
 
 /* splash page small image that's a link */
 .site-title a { 
-background: url(<?php print file_create_url($file->uri); ?>) ; 
+background: url(<?php 
+if(isset($file)){
+print file_create_url($file->uri); 
+}
+?>) ; 
  background-repeat: no-repeat;
 
 }
@@ -293,9 +297,12 @@ $zz++;
 <div id="front-page-1" class="front-page-1 solid-section">
 <?php 
 $i = 0;
-while(strlen(@$content['field_page_2_content'][$i]['#markup']) > 5){
-$i++;
-} 
+
+if(isset($content['field_page_2_content'][$i]['#markup'])){
+	while(strlen($content['field_page_2_content'][$i]['#markup']) > 5){
+	$i++;
+	} 
+}
 ?>
 <div class="widget-area <?php print convertToWord($i); ?>">
 <div class="wrap">
@@ -303,8 +310,10 @@ $i++;
 $i2 = 0;
 while($i2 <= $i){
 print "<section id=\"text-2\" class=\"widget widget_text\">";
-print "<div class=\"widget-wrap\">";		
-print @$content['field_page_2_content'][$i2]['#markup'];
+print "<div class=\"widget-wrap\">";
+	if(isset($content['field_page_2_content'][$i2]['#markup'])){		
+	print $content['field_page_2_content'][$i2]['#markup'];
+	}
 print "</div>";
 print "</section>";
 $i2++;
@@ -439,10 +448,10 @@ $i4++;
 
 <?php
 if(isset($content['field_footer_menu'][0]['#markup'])){
-$footer_menu = $content['field_footer_menu'][0]['#markup']; 
-$footer_menu = str_replace("<p>","",$footer_menu);
-$footer_menu = str_replace("</p>","",$footer_menu);
-$fm = explode("</a>",$footer_menu);
+	$footer_menu = $content['field_footer_menu'][0]['#markup']; 
+	$footer_menu = str_replace("<p>","",$footer_menu);
+	$footer_menu = str_replace("</p>","",$footer_menu);
+	$fm = explode("</a>",$footer_menu);
 ?>
 <footer class="site-footer" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
 <div class="wrap">
@@ -450,17 +459,17 @@ $fm = explode("</a>",$footer_menu);
 <ul id="ms-menu-footer-nav" class="genesis-nav-ms-menu">
 <?php
 
-foreach($fm as $f){
-print "<li id=\"ms-menu-item-" . $zz . "\" class=\"ms-menu-item ms-menu-item-type-custom ms-menu-item-object-custom ms-menu-item-" . $zz . "\">";
-print $f . "</a></li>";
-$zz++;
-}
+		foreach($fm as $f){
+		print "<li id=\"ms-menu-item-" . $zz . "\" class=\"ms-menu-item ms-menu-item-type-custom ms-menu-item-object-custom ms-menu-item-" . $zz . "\">";
+		print $f . "</a></li>";
+		$zz++;
+		}
 ?>
 </ul>
 </nav>
 
 <p id="footer-logo">
-<a target = "_blank" href="<?php print @$content['field_footer_logo_link'][0]['#markup']; ?>">
+<a target = "_blank" href="<?php print $content['field_footer_logo_link'][0]['#markup']; ?>">
 <?php 
 if(isset($content['field_footer_logo'][0]['#item']['fid'])){
 print "<img src=\"";
@@ -483,7 +492,7 @@ print $footer_text;
 </div>
 </footer>
 <?php
-}
+	}
 } else {
     print render($content);
 
