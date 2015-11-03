@@ -302,7 +302,7 @@ $zz++;
 $i = 0;
 
 if(isset($content['field_page_2_content'][$i]['#markup'])){
-	while(strlen($content['field_page_2_content'][$i]['#markup']) > 5){
+	while(isset($content['field_page_2_content'][$i]['#markup']) AND strlen($content['field_page_2_content'][$i]['#markup']) > 5){
 	$i++;
 	} 
 }
