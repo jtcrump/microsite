@@ -95,7 +95,7 @@ print "<script type='text/javascript' src='" . $path . "/js/foundation.min.js'><
 }
 ?>
 <link rel="Shortcut Icon" href="" . $path . "/images/favicon.ico" type="image/x-icon" />
-<link rel='stylesheet' id='dashicons-css'  href='" . $path . "/style/dashicons.min.css?ver=4.2.3' type='text/css' media='all' />
+<!--- <link rel='stylesheet' id='dashicons-css'  href='" . $path . "/style/dashicons.min.css?ver=4.2.3' type='text/css' media='all' /> --->
 <link rel='stylesheet' id='google-font-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600&#038;ver=1.0.1' type='text/css' media='all' />
 <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
