@@ -168,8 +168,13 @@ background: url(<?php print file_create_url($file->uri); ?>) ;
 
 <?php
 // this will set the height of the splash screen logo. Width is auto
+
+if(isset($file)){
 $size = getimagesize(file_create_url($file->uri));
 $height = $size[1];
+} else {
+$height = "0";
+}
 ?>
 
 .header-image .site-title > a {
@@ -433,6 +438,7 @@ $i4++;
 </div></div>
 
 <?php
+if(isset($content['field_footer_menu'][0]['#markup'])){
 $footer_menu = $content['field_footer_menu'][0]['#markup']; 
 $footer_menu = str_replace("<p>","",$footer_menu);
 $footer_menu = str_replace("</p>","",$footer_menu);
@@ -477,6 +483,7 @@ print $footer_text;
 </div>
 </footer>
 <?php
+}
 } else {
     print render($content);
 
