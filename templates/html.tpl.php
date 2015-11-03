@@ -16,7 +16,7 @@ $path = "/" . drupal_get_path('theme', variable_get('theme_default', NULL));
 <meta name="robots" content="noodp,noydir" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="canonical" href="http://tulane.edu/inauguration/" />
-
+ 
 <!---
 		<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":".\/js\/wp-emoji-release.min.js"}};
