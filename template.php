@@ -15,10 +15,10 @@
 
 
 /**
- * Implements tulane_preprocess_html
+ * Implements microsite_preprocess_html
  *
  */
-function tulane_preprocess_html(&$variables) {
+function microsite_preprocess_html(&$variables) {
 
 	if(isset($variables['page']['content']['system_main']['nodes'])){
 		foreach(@$variables['page']['content']['system_main']['nodes'] as $key => $value){
@@ -38,7 +38,7 @@ function tulane_preprocess_html(&$variables) {
 
 
 
-function tulane_form_webform_client_form_alter(&$form, $form_state, $form_id) {
+function microsite_form_webform_client_form_alter(&$form, $form_state, $form_id) {
     $form['actions']['submit']['#attributes']['id'] = 'edit-webform-ajax-submit-'.$form['#node']->nid;
 }
 
@@ -47,16 +47,16 @@ function tulane_form_webform_client_form_alter(&$form, $form_state, $form_id) {
  * Implements template_preprocess_node
  *
  */
-function tulane_preprocess_node(&$variables) {
+function microsite_preprocess_node(&$variables) {
 
 // exit();
 }
 
 /**
- * Implements tulane_preprocess_page
+ * Implements microsite_preprocess_page
  *
  */
-function tulane_preprocess_page(&$variables) {
+function microsite_preprocess_page(&$variables) {
 
  // $variables['node']->my_form = drupal_get_form('rsvp_responses');
 }
