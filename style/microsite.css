@@ -1382,6 +1382,7 @@ img.alignright,
 	max-width: 90%;
 }
 
+.cafe-pro-home .content .nine-widgets .widget,
 .cafe-pro-home .content .seven-widgets .widget,
 .cafe-pro-home .content .five-widgets .widget,
 .cafe-pro-home .content .six-widgets .widget,
@@ -1390,6 +1391,7 @@ img.alignright,
 	width: 31.623931623931625%;
 }
 
+.cafe-pro-home .content .ten-widgets .widget,
 .cafe-pro-home .content .eight-widgets .widget,
 .cafe-pro-home .content .five-widgets .widget:nth-last-of-type(-n+2),
 .cafe-pro-home .content .four-widgets .widget,
@@ -1401,11 +1403,14 @@ img.alignright,
 	width: 100%;
 }
 
+.cafe-pro-home .content .ten-widgets .widget:nth-of-type(odd),
 .cafe-pro-home .content .eight-widgets .widget:nth-of-type(odd),
 .cafe-pro-home .content .five-widgets .widget:nth-of-type(3n+1),
 .cafe-pro-home .content .four-widgets .widget:nth-of-type(odd),
 .cafe-pro-home .content .seven-widgets .widget:nth-child(4),
 .cafe-pro-home .content .seven-widgets .widget:nth-child(4n+1),
+.cafe-pro-home .content .nine-widgets .widget:nth-child(5),
+.cafe-pro-home .content .nine-widgets .widget:nth-child(5n+1),
 .cafe-pro-home .content .six-widgets .widget:nth-of-type(3n+1),
 .cafe-pro-home .content .three-widgets .widget:nth-of-type(1),
 .cafe-pro-home .content .two-widgets .widget:nth-of-type(odd),
@@ -1414,10 +1419,12 @@ img.alignright,
 	margin-left: 0;
 }
 
+.cafe-pro-home .content .ten-widgets .widget:nth-last-of-type(-n+2),
 .cafe-pro-home .content .eight-widgets .widget:nth-last-of-type(-n+2),
 .cafe-pro-home .content .five-widgets .widget:nth-last-of-type(-n+2),
 .cafe-pro-home .content .four-widgets .widget:nth-last-of-type(-n+2),
 .cafe-pro-home .content .seven-widgets .widget:nth-last-of-type(-n+3),
+.cafe-pro-home .content .nine-widgets .widget:nth-last-of-type(-n+4),
 .cafe-pro-home .content .six-widgets .widget:nth-last-of-type(-n+3),
 .cafe-pro-home .content .three-widgets .widget,
 .cafe-pro-home .content .two-widgets .widget,

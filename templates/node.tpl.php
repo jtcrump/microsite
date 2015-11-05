@@ -106,6 +106,12 @@ switch ($num) {
 	case 8:
 		$num = "eight-widgets";
 		break;
+	case 9:
+		$num = "nine-widgets";
+		break;
+	case 10:
+		$num = "ten-widgets";
+		break;
 	default:
 		$num = "one-widget";
 	}
