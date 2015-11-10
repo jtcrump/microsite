@@ -278,12 +278,17 @@ blockquote::before {
 
 /* ## Headings
 --------------------------------------------- */
-
+.wh4{
+	font-family: 'Open Sans', sans-serif;
+	font-weight:  600;
+	line-height: 1.2;
+	margin: 0 0 10px;
+	font-size: 20px;
+}
 h1,
 h2,
 h3,
 h4,
-wh4,
 h5,
 h6 {
 	/* Adjustment
@@ -308,9 +313,6 @@ h3 {
 }
 
 h4 {
-	font-size: 20px;
-}
-wh4 {
 	font-size: 20px;
 }
 
@@ -1468,7 +1470,7 @@ img.alignright,
 .front-page-3 h2,
 .front-page-3 h3,
 .front-page-3 h4,
-.front-page-3 wh4,
+.wh4,
 .front-page-3 h5,
 .front-page-3 h6,
 .front-page-3 .featured-content .entry-title a,
@@ -2279,7 +2281,8 @@ background-color: #63c8ea ;
 }
 
 #front-page-1 p, 
-#front-page-1 wh4, 
+#front-page-1,
+.wh4, 
 #front-page-1 h4 { 
 	font-family: 'Open Sans', sans-serif;
 	color: #fff;
