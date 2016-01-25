@@ -503,7 +503,7 @@ $i5++;
 }
 ?>
 
-<?php
+
 if(strlen(@$content['field_page_7_content'][0]['#markup']) > 5){
 ?>
 <!--- start the fourth page after the intro splash --->
