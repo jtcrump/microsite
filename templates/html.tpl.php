@@ -83,7 +83,7 @@ url(<?php print $path; ?>/fonts/CharisSIL/CharisSIL-BI.svg#charis_silbold_italic
 
  
 <?php
-print "<link rel='stylesheet' href='" . $path . "/style/microsite.css?v=32' type='text/css'>";
+print "<link rel='stylesheet' href='" . $path . "/style/microsite.css?v=33' type='text/css'>";
 print "<script type='text/javascript' src='" . $path . "/js/jquery.js?ver=1.11.2'></script>";
 print "<script type='text/javascript' src='" . $path . "/js/jquery-migrate.min.js?ver=1.2.1'></script>";
 print "<script type='text/javascript' src='" . $path . "/js/global.js?ver=1.0.0'></script>";
