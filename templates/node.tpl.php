@@ -145,14 +145,6 @@ $file5 = file_load($content['field_page_5_bg_image'][0]['#item']['fid']);
 if(isset($content['field_nav_image'][0]['#item']['fid'])){
 $file6 = file_load($content['field_nav_image'][0]['#item']['fid']);
 }
-
-if(isset($content['field_page_6_bg_image'][0]['#item']['fid'])){
-$file7 = file_load($content['field_page_6_bg_image'][0]['#item']['fid']);
-}
-
-if(isset($content['field_page_7_bg_image'][0]['#item']['fid'])){
-$file8 = file_load($content['field_page_7_bg_image'][0]['#item']['fid']);
-}
 ?>
 
 
@@ -239,24 +231,6 @@ print file_create_url($file4->uri);
 <?php 
 if(isset($file5)){
 print file_create_url($file5->uri); 
-}
-?>);
-}
-
-.front-page-5 {
-	background-image: url(
-<?php 
-if(isset($file7)){
-print file_create_url($file7->uri); 
-}
-?>);
-}
-
-.front-page-6 {
-	background-image: url(
-<?php 
-if(isset($file8)){
-print file_create_url($file8->uri); 
 }
 ?>);
 }
@@ -470,62 +444,6 @@ print "</div>";
 print "</section>";
 $i2++;
 $i4++;
-}
-?>
-
-
-
-
-
-<?php
-if(strlen(@$content['field_page_6_content'][0]['#markup']) > 5){
-?>
-<!--- start the fourth page after the intro splash --->
-<div id="front-page-5" class="front-page-5 image-section">
-<?php 
-$i = 0;
-while(strlen(@$content['field_page_6_content'][$i]['#markup']) > 5){
-$i++;
-} 
-?>
-<div class="widget-area <?php print convertToWord($i); ?>">
-<div class="wrap">
-<?php
-$i5 = 0;
-while($i5 < $i){
-print "<section id=\"text-" . $i2 . "\" class=\"widget widget_text\">";
-print "<div class=\"widget-wrap\">";		
-print @$content['field_page_6_content'][$i5]['#markup'];
-print "</div>";
-print "</section>";
-$i2++;
-$i5++;
-}
-?>
-
-
-if(strlen(@$content['field_page_7_content'][0]['#markup']) > 5){
-?>
-<!--- start the fourth page after the intro splash --->
-<div id="front-page-6" class="front-page-6 image-section">
-<?php 
-$i = 0;
-while(strlen(@$content['field_page_7_content'][$i]['#markup']) > 5){
-$i++;
-} 
-?>
-<div class="widget-area <?php print convertToWord($i); ?>">
-<div class="wrap">
-<?php
-$i6 = 0;
-while($i6 < $i){
-print "<section id=\"text-" . $i2 . "\" class=\"widget widget_text\">";
-print "<div class=\"widget-wrap\">";		
-print @$content['field_page_7_content'][$i6]['#markup'];
-print "</div>";
-print "</section>";
-$i2++;
-$i6++;
 }
 ?>
 </div></div></div>
